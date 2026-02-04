@@ -20,11 +20,19 @@
     <form action="" method="post">
             <label for="fname">First Name:</label>
         <input type="text" id="fname" name="fname">
-        <label for="lname">Last Name:</label>
-        <input type="text" id="lname" name="lname"><br>
-        <label for="comments">Comments: </label><br>
-        <textarea id="comments" name="comments"></textarea><br>
-        <input type="submit" value="Send">
+        <label for="fname">Last Name:</label>
+        <input type="text" id="fname" name="fname"><br>
+        <p>Reason for contacting:</p>
+        <input type="radio" id="reason1" name="reason" value="Networking">.  
+        <label for="reason1">Networking</label><br>
+        <input type="radio" id="reason2" name="reason" value="Collaboration">
+        <label for="reason2">Collaboration</label><br>  
+        <input type="radio" id="reason3" name="reason" value="Questions">
+        <label for="reason3">Questions</label>
+
+        <label for="emailaddress">Email Address: </label><br>
+        <textarea id="emailaddress" name="emailaddress"></textarea><br>
+        <input type="submit" value="Connect">
     </form>
 </body>
 </html>
