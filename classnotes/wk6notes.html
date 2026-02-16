@@ -9,12 +9,15 @@
         p{font-family: Arial, Helvetica, sans-serif;font-size: 2em;
             font-weight: 100;
         }
-        p a{color: orange;} <!--makes only a tag links orange in paragraphs-->
+        p a{color: orange;} <!-- makes only a tag links orange in paragraphs-->
+    #numberone{color:black} <!-- using selctor id so though two h1, it refrences only the one with that id so even though there is a rule above that says make all headers red, it reads in order since this is next it remains-->
+    .green{color:green}
     </style>
 </head>
 <body>
-    <h1>Header</h1>
+    <h1 id="numberone">Header</h1> 
+    <h1 id="numbertwo" class="green">Header</h1>
     <h2>Page content goes <a href="https://syr.edu">here</a></h2>
-    <p>Page content goes <a href="https://syr.edu">here</a></p>
+    <p class="green">Page content goes <a href="https://syr.edu">here</a></p>
 </body>
 </html>
