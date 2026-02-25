@@ -1,0 +1,25 @@
+<!-- Body background and default text color-->
+body {
+    background-color: #f6e0b5;
+    color: #66545e;
+    font-family: Garamond, serif;
+}
+
+ <!--Links-->
+a {color: #aa6f73;}
+
+ <!--Headings-->
+h1, h2 {color: #aa6f73;}
+
+<!--Navigation background-->
+nav {
+    background-color: #66545e; 
+    padding: 10px; 
+    margin-bottom: 30px;
+}
+
+<!--Navigation links-->
+nav a {color: #f6e0b5;}
+
+<!--Navigation hover highlight-->
+nav a:hover {background-color: #eea990;}
