@@ -5,11 +5,16 @@ body {
     font-family: Garamond, serif;
 }
 
+<!--Table Styling-->
+.evenrow{background-color: bisque;}
+
  <!--Links-->
 a {color: #aa6f73;}
 
  <!--Headings-->
 h1, h2 {color: #aa6f73;}
+h1{font-size: 3em;}
+h2{font-size: 2em;}
 
 <!--Navigation background-->
 nav {
