@@ -34,3 +34,15 @@ nav a:hover {background-color: #eea990;}
     float: left;
 }
 .quote{float:right;}
+
+/*Flexbox row for contact page*/
+.row {
+    display: flex;
+}
+
+.column {
+    flex: 1;
+    background-color: #e0f7fa;
+    padding: 2em;
+    border-radius: 1em;
+}
