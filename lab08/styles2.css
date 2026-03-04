@@ -29,5 +29,8 @@ nav a {color: #f6e0b5;}
 /*Navigation hover highlight*/
 nav a:hover {background-color: #eea990;}
 
-/*Footer Quote on right*/
+/*Footer Quote on right and copyright on left*/
+.copyright {
+    float: left;
+}
 .quote{float:right;}
