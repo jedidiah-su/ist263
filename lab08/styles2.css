@@ -38,17 +38,49 @@ nav a:hover {background-color: #eea990;}
 /*Flexbox row for contact page*/
 .row {
     display: flex;
-    margin: 0 20px; 
+    margin: 20px; 
     background-color: #f0f5f6;
     border-radius: 1em;
-    
+    padding: 1em;   
 }
+/*Extra spacing between first and second row*/
 .row:first-of-type {
-    margin-bottom: 2em;
-    
+    margin-bottom: 2em;   
 }
-
+/*Flexbox column for contact page*/
 .column {
     flex: 1;  
     padding: 2em;
+}
+/*First and last name input width to handle it fitting any kind of screen size*/
+#fname, #lname {
+    width: 100%;
+}
+/*Text and email input styling*/
+form input[type="text"],
+form input[type="email"] {
+    width: 90%;
+    padding: 8px;
+    margin: 6px 0 14px 0;
+    border: 1px solid #aa6f73;
+    border-radius: 4px;
+}
+/*Submit button styling*/
+form input[type="submit"] {
+    background-color: #66545e;
+    color: #f6e0b5;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+/*Submit button hover*/
+form input[type="submit"]:hover {
+    background-color: #aa6f73;
+}
+/*Form Label styling*/
+form label {
+    font-weight: bold;
+    color: #66545e;
 }
