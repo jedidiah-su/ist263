@@ -38,11 +38,12 @@ nav a:hover {background-color: #eea990;}
 /*Flexbox row for contact page*/
 .row {
     display: flex;
+    margin: 10px;
 }
 
 .column {
     flex: 1;
     background-color: #e0f7fa;
-    padding: 2em;
+    padding: 10px;
     border-radius: 1em;
 }
