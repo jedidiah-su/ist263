@@ -29,11 +29,5 @@ nav a {color: #f6e0b5;}
 /*Navigation hover highlight*/
 nav a:hover {background-color: #eea990;}
 
-/*Footer*/
-footer{
-    margin-top: 10px;
-    padding: 3em;
-}
-
-/*Quote on right*/
+/*Footer Quote on right*/
 .quote{float:right;}
