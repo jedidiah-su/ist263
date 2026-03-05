@@ -35,6 +35,9 @@ nav a:hover {background-color: #eea990;}
 }
 .quote{float:right;}
 
+iframe{width:100%;}
+
+
 /*Flexbox row for contact page*/
 .row {
     display: flex;
