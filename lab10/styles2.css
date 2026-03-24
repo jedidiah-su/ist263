@@ -5,6 +5,9 @@ body {
     font-family: Garamond, serif;
 }
 
+/*Flexible Image Styling*/
+.banner{max-width: 100%;}
+
 /*Table Styling*/
 .evenrow{background-color: #ab8841;}
 
