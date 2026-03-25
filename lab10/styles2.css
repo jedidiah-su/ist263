@@ -40,6 +40,8 @@ nav {
     margin-bottom: 30px;
 }
 
+nav span{color:#f6e0b5}
+
 /*Navigation links*/
 nav a {color: #f6e0b5;}
 
@@ -58,6 +60,7 @@ iframe{width:100%;}
 /*Flexbox row for contact page*/
 .row {
     display: flex;
+    flex-wrap:wrap;
     margin: 20px; 
     background-color: #f0f5f6;
     border-radius: 1em;
