@@ -39,7 +39,7 @@ nav {
     padding: 10px; 
     margin-bottom: 30px;
 }
-
+/*Pipes color so it shows*/
 nav span{color:#f6e0b5}
 
 /*Navigation links*/
@@ -55,7 +55,6 @@ nav a:hover {background-color: #eea990;}
 .quote{float:right;}
 
 iframe{width:100%;}
-
 
 /*Flexbox row for contact page*/
 .row {
