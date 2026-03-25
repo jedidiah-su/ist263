@@ -4,6 +4,8 @@ body {
     color: #66545e;
     font-family: Garamond, serif;
 }
+
+
   /* Styles for tablet and smaller screens  */
 @media only screen and (max-width: 800px) {
     nav a {
