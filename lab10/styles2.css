@@ -4,6 +4,18 @@ body {
     color: #66545e;
     font-family: Garamond, serif;
 }
+  /* Styles for tablet and smaller screens  */
+@media only screen and (max-width: 800px) {
+    nav a {
+        display: block;
+        width: 100%;
+        padding: 10px;
+    }
+    nav span {
+        display: none;
+    }
+
+}
 
 /*Flexible Image Styling*/
 .banner{max-width: 100%;}
