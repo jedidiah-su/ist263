@@ -5,7 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lab 11</title>
+    <style>
+        .container{display: flex;}
+        #first{order:1;}
+        #second{order:2;}
+        #third{order:3;}
+    </style>
     <script>
+        function ShuffleShells(){
+            document.getElementById("first").style.order = Math.floor((Math.random()* 3) + 2)
+        }
         function WinnerMessage(){
             document.getElementById("messages").innerHTML = 'You Won!';
         } 
@@ -17,9 +26,11 @@
 </head>
 <body>
     <h1>Choose a Walnut</h1>
-    <img src="./practicefile_files/walnut.png" alt="first walnut" class="first" onclick="WinnerMessage();">
-    <img src="./practicefile_files/walnut.png" alt="second walnut" class="second" onclick="TryAgain();">
-    <img src="./practicefile_files/walnut.png" alt="third walnut" class="third" onclick="TryAgain();">
+    <div class="container">
+    <img src="./practicefile_files/walnut.png" alt="first walnut" id="first" onclick="WinnerMessage();">
+    <img src="./practicefile_files/walnut.png" alt="second walnut" id="second" onclick="TryAgain();">
+    <img src="./practicefile_files/walnut.png" alt="third walnut" id="third" onclick="TryAgain();">
+    </div>
     <div id="messages"></div>
 
 
