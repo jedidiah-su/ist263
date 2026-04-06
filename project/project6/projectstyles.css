@@ -1,0 +1,18 @@
+/* Setting my format for the entire page */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/* Setting the font and back ground color */
+body {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: #444444;
+    line-height: 1.7;
+    background-color: #ffffff;
+}
+ 
+img {
+    max-width: 100%;
+    display: block;
+}
