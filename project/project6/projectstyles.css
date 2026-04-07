@@ -4,15 +4,101 @@
     margin: 0;
     padding: 0;
 }
-/* Setting the font and back ground color */
+/* Setting the font and back ground color for the page */
 body {
     font-family:Georgia, 'Times New Roman', Times, serif;
     color: #444444;
     line-height: 1.7;
     background-color: #ffffff;
 }
- 
+/* Making all images responsive so they dont overflow their container */
 img {
     max-width: 100%;
     display: block;
+}
+/* Removing the underline from all links and setting the default link color */
+a {
+    color: #1B3A6B;
+    text-decoration: none;
+}
+/* Adding an line under links so it shows when hovering over it so users know it is clickable */
+a:hover {
+    text-decoration: underline;
+}
+ 
+/* Removing the default bullet points and numbers from all lists */
+ul, ol {
+    list-style: none;
+}
+/* Styling the small image caption text below each figure */
+figcaption {
+    font-size: 0.8em;
+    color: #999999;
+    font-style: italic;
+    margin-top: 6px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* Nav stylings */
+/* Setting the header background color and making it stick to the top as the user scrolls */
+.site-header {
+    background-color: #1B3A6B;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+/* Using flexbox to put the website name on the left and nav links on the right */
+.nav-bar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 40px;
+    height: 64px;
+}
+/* Styling the site name on the left side of the nav */
+.nav-brand {
+    color: #ffffff;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1em;
+    font-weight: bold;
+    text-decoration: none;
+    flex-shrink: 0;
+}
+/* Changing the site name color when hovered */
+.nav-brand:hover {
+    color: #C9A847;
+    text-decoration: none;
+}
+/* Using flexbox to display all nav link buttons in a horizontal row */
+.nav-links {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    list-style: none;
+}
+/* Styling each nav link to look like a gold bordered button*/
+nav-link {
+    display: block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.78em;
+    color: #1B3A6B;
+    background-color: #F4EFD8;
+    border: solid 1.5px #C9A847;
+    padding: 6px 14px;
+    text-decoration: none;
+    white-space: nowrap;
+}
+/* Filling the button with color when the user hovers over it */
+.nav-link:hover {
+    background-color: #C9A847;
+    color: #1B3A6B;
+    text-decoration: none;
+}
+/* Highlighting the current page link so the user knows where they are */
+.nav-active {
+    background-color: #C9A847;
+    color: #1B3A6B;
+    font-weight: bold;
 }
