@@ -12,21 +12,31 @@
  
     <header class="site-header">
         <nav class="nav-bar">
-            <a href="index.html">Home</a> <span>|</span>
-            <a href="culture.html">Culture, Coastlines &amp; Community</a> <span>|</span>
-            <a href="handbook.html">The Liberia Handbook</a> <span>|</span>
-            <a href="handbook.html">Plan Your Trip</a>
+            <a href="index.html" class="nav-brand">Discover West Africa</a>
+            <!-- Hamburger button which shows on smaller screens and get hidden on bigger screens -->
+            <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+ 
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html" class="nav-link nav-active">Home</a></li>
+                <li><a href="culture.html" class="nav-link">Culture, Coastlines &amp; Community</a></li>
+                <li><a href="handbook.html" class="nav-link">The Liberia Handbook</a></li>
+                <li><a href="handbook.html" class="nav-link">Plan Your Trip</a></li>
+            </ul>
         </nav>
     </header>
  
     <main>
  
         <!-- Hero Section -->
-        <section>
-            <p>Yor Hello! &nbsp;&middot;&nbsp; Mw3n aye! &nbsp;&middot;&nbsp; Akwaaba! &nbsp;&middot;&nbsp; Kaabo! &nbsp;&middot;&nbsp; Nanga def! &nbsp;&middot;&nbsp; Hello!</p>
-            <h1>Discover West Africa Through Liberia</h1>
-            <figure>
-                <img src="../webmedia/Planeinsky.jpg" alt="a plane flying in the sky">
+        <section class="hero">
+            <p class="hero-greeting">Yor Hello! &nbsp;&middot;&nbsp; Mw3n aye! &nbsp;&middot;&nbsp; Akwaaba! &nbsp;&middot;&nbsp; Kaabo! &nbsp;&middot;&nbsp; Nanga def! &nbsp;&middot;&nbsp; Hello!</p>
+            <h1 class="hero-heading">Discover West Africa Through Liberia</h1>
+            <figure class="hero-figure">
+                <img class="hero-img" src="../webmedia/Planeinsky.jpg" alt="a plane flying in the sky">
                 <figcaption>Discovering the Skies of The West Coast of Africa</figcaption>
             </figure>
             <p>West Africa is a region filled with rich traditions, people of incredible resilience and vibrant communities. This travel and culture guide focuses on Liberia — a country with deeply rooted cultural heritage and powerful stories of history and hope.</p>
