@@ -133,3 +133,119 @@ figcaption {
     align-items: center;
     gap: 20px;
 }
+/* Styling the small greeting line at the top of the hero */
+.hero-greeting {
+    color: rgba(255, 255, 255, 0.7);
+    font-family: Arial, sans-serif;
+    font-size: 0.85em;
+    font-style: italic;
+    letter-spacing: 1px;
+}
+/* Styling the large main heading inside the hero */
+.hero-heading {
+    color: #ffffff;
+    font-size: 2.6em;
+    line-height: 1.1;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    max-width: 640px;
+}
+/* Containing the hero image so it fills the available width */
+.hero-figure {
+    width: 100%;
+    max-width: 900px;
+    margin: 0;
+}
+/* Making the hero image fill its container and reducing opacity so the background color shows through */
+.hero-img {
+    width: 100%;
+    height: 340px;
+    object-fit: cover;
+    display: block;
+    opacity: 0.55;
+}
+
+/* Styling the paragraph below the hero image */
+.hero-sub {
+    color: rgba(255, 255, 255, 0.85);
+    font-family: Arial, sans-serif;
+    font-size: 0.95em;
+    line-height: 1.7;
+    max-width: 580px;
+}
+/* Using flexbox to place the two hero buttons side by side */
+.hero-btns {
+    display: flex;
+    flex-direction: row;
+    gap: 14px;
+    flex-wrap: wrap;
+    justify-content: center;}
+
+/* Buttons */
+
+/* Setting the shared base styles for all buttons on the page */
+.btn {
+    display: inline-block;
+    font-family: Arial, sans-serif;
+    font-size: 0.85em;
+    font-weight: bold;
+    padding: 11px 28px;
+    text-decoration: none;
+    cursor: pointer;
+    text-align: center;
+}
+/* The filled button used in the hero */
+.btn-primary {
+    background-color: #1B3A6B;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+}
+
+/* Setting the hero button colors when hovered */
+.btn-primary:hover {
+    background-color: #ffffff;
+    color: #1B3A6B;
+    text-decoration: none;
+}
+/* The transparent outline button used in the hero */
+.btn-outline {
+    background-color: transparent;
+    color: #ffffff;
+    border: 2px solid rgba(255, 255, 255, 0.6);
+}
+ 
+/* Adding a faint white fill when the outline button is hovered */
+.btn-outline:hover {
+    background-color: rgba(255, 255, 255, 0.12);
+    text-decoration: none;
+}
+ 
+/* The bordered button used in the body sections */
+.btn-gold {
+    background-color: #F4EFD8;
+    color: #1B3A6B;
+    border: 1.5px solid #C9A847;
+    padding: 9px 22px;
+}
+/* Filling the body button fully when hovered */
+.btn-gold:hover {
+    background-color: #C9A847;
+    color: #1B3A6B;
+    text-decoration: none;
+}
+/* Styling and setting up the marquee bar */
+/* Setting the dark red background for the marquee strip */
+.marquee-strip {
+    background-color: #8B1A1A;
+    padding: 10px 40px;
+    overflow: hidden;
+}
+
+/* Keeping the marquee text on one line so it does not wrap */
+.marquee-text {
+    color: rgba(255, 255, 255, 0.88);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.82em;
+    font-style: italic;
+    white-space: nowrap;
+    letter-spacing: 0.5px;
+}
