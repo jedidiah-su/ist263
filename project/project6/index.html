@@ -13,8 +13,8 @@
     <header class="site-header">
         <nav class="nav-bar">
             <a href="index.html" class="nav-brand">Discover West Africa</a>
-            <!-- Hamburger button which shows on smaller screens and get hidden on bigger screens -->
-            <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+            <!-- Hamburger button which shows on smaller screens and get hidden on bigger screens, the function gets called when clicked -->
+            <button class="nav-toggle" onclick="toggleMenu()">
                 <span class="hamburger-line"></span>
                 <span class="hamburger-line"></span>
                 <span class="hamburger-line"></span>
@@ -148,29 +148,42 @@
         </section>
  
         <!-- Travel with Purpose -->
-        <section>
-            <h2>Travel with Purpose</h2>
+        <section class="section-purpose">
+            <p class="eyebrow">Our Mission</p>
+            <h2 class="section-heading">Travel with Purpose</h2>
             <p>This guide goes beyond typical tourism to help you understand Liberian culture, history, and daily life. Each section includes cultural context, practical travel tips, and respectful practices to ensure your journey enriches both you and the communities you visit.</p>
             <p>Liberia has a powerful story to tell. Come with curiosity, patience, and openness. Leave with understanding, memories, and a deeper appreciation for West African resilience and hospitality.</p>
         </section>
  
-        
-        <section>
-            <h2>Explore the Culture, People &amp; Coastlines</h2>
-            <p>Language, etiquette, key destinations, and the natural beauty of Liberia.</p>
-            <p><a href="culture.html">Culture, Coastlines &amp; Community &rarr;</a></p>
+        <!--The bridge section-->
+        <section class="bridge-strip">
+            <div class="bridge-inner">
+                <div class="bridge-text">
+            <strong>Explore the Culture, People &amp; Coastlines</strong>
+            <span>Language, etiquette, key destinations, and the natural beauty of Liberia.</span>
+            </div>
+            <a href="culture.html" class="btn btn-gold">Culture, Coastlines &amp; Community &rarr;</a>
+            </div>
         </section>
  
     </main>
  
-    <footer>
-        <nav>
-            <a href="index.html">Home</a> <span>|</span>
-            <a href="culture.html">Culture, Coastlines &amp; Community</a> <span>|</span>
+    <footer class="site-footer">
+        <nav class="footer-nav">
+            <a href="index.html">Home</a>
+            <a href="culture.html">Culture, Coastlines &amp; Community</a>
             <a href="handbook.html">The Liberia Handbook</a>
         </nav>
-        <p>&copy; Discover Liberia &mdash; West Africa Travel Guide</p>
+        <p class="footer-copy">&copy; Discover Liberia &mdash; West Africa Travel Guide</p>
     </footer>
+
+<!-- JavaScript for the mobile hamburger menu toggle -->
+<script>
+    function toggleMenu() {
+        var links = document.querySelector('.nav-links');
+        links.classList.toggle('nav-links-open');
+    }
+</script>
  
 </body>
 </html>

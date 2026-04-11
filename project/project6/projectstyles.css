@@ -466,3 +466,270 @@ figcaption {
     color: #666666;
     line-height: 1.65;
 }
+/* The travel with purpose section */
+/* Setting the background and padding for this section */
+.section-purpose {
+    background-color: #F7F4EE;
+    padding: 72px 40px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+ 
+/* Styling the body paragraphs inside this section */
+.section-purpose p {
+    font-family: Arial, sans-serif;
+    font-size: 0.95em;
+    color: #555555;
+    line-height: 1.7;
+    margin-bottom: 12px;
+    max-width: 760px;
+}
+/* The bridge strip */
+/* Setting the background and border for this strip*/
+.bridge-strip {
+    background-color: #F7F4EE;
+    border-top: 1px solid #e0dbd0;
+    border-bottom: 1px solid #e0dbd0;
+    padding: 24px 0;
+}
+/* Using flexbox to put the text on the left and the button on the right */
+.bridge-inner {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+/* Stacking the heading and subtext as a column on the left side */
+.bridge-text {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+ 
+/* Styling the bold heading in the bridge strip */
+.bridge-text strong {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1em;
+    color: #1B3A6B;
+}
+ 
+/* Styling the smaller subtitle below the bridge heading */
+.bridge-text span {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.82em;
+    color: #888888;
+}
+/* The footer */
+/* Setting the footer background */
+.site-footer {
+    background-color: #1B3A6B;
+    padding: 28px 40px;
+    text-align: center;
+}
+ 
+/* Using flexbox to display footer links centered in a row */
+.footer-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 28px;
+    margin-bottom: 12px;
+    flex-wrap: wrap;
+}
+/* Styling each footer link */
+.footer-nav a {
+    color: rgba(255, 255, 255, 0.65);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.82em;
+    text-decoration: none;
+}
+ 
+/* Changing footer links color when hovered */
+.footer-nav a:hover {
+    color: #C9A847;
+    text-decoration: none;
+}
+/* Styling the copyright line at the bottom of the footer */
+.footer-copy {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.8em;
+    color: rgba(255, 255, 255, 0.5);
+}
+ 
+/* Making the site name inside the copyright line have color */
+.footer-copy strong {
+    color: #C9A847;
+}
+/* Fixing my media query to allow my site be able to adjust for different screens and be responsive */
+/* For Large screens of 1200px and wider */
+@media (min-width: 1200px) {
+
+    /* Giving the hero more breathing room on large screens */
+    .hero {
+        padding: 80px 40px;
+    }
+
+    /* Making the hero heading larger on big screens */
+    .hero-heading {
+        font-size: 3em;
+    }
+
+    /* Giving section headings more presence on large screens */
+    .section-heading {
+        font-size: 2.1em;
+    }
+}
+/* For screens of 900px wide and smaller */
+@media (max-width: 900px) {
+
+    /* Making the hero heading smaller on screens of this size */
+    .hero-heading {
+        font-size: 2em;
+    }
+
+    /* Stacking the two-column image and text sections into one column */
+    .split-layout {
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    /* Making image columns go full width when stacked */
+    .split-img-col,
+    .split-img-tall {
+        flex: 0 0 100%;
+        width: 100%;
+    }
+
+    /* Allowing cards to wrap so two appear per row on screens of this size */
+    .cards-row {
+        flex-wrap: wrap;
+    }
+
+    /* Setting each card to take roughly half the row width on screens of this size */
+    .card {
+        flex: 1 1 calc(50% - 10px);
+    }
+}
+/* For mobile screens*/
+@media (max-width: 768px) {
+
+    /* Nav collapses to hamburger */
+    .nav-toggle {
+        display: flex;
+    }
+    /* Adjusting the nav bar height so it wraps correctly on mobile */
+    .nav-bar {
+        height: auto;
+        padding: 14px 20px;
+        flex-wrap: wrap;
+    }
+    /* Hiding all nav links by default on mobile until the hamburger is clicked */
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        gap: 0;
+        margin-top: 10px;
+        border-top: 1px solid rgba(255, 255, 255, 0.2);
+        padding-top: 8px;
+    }
+    /* toggleMenu() in the script adds this class to show the links */
+    .nav-links.nav-links-open {
+        display: flex;
+    }
+    /* Making each nav link fill the full width on mobile */
+    .nav-link {
+        width: 100%;
+        padding: 10px 16px;
+        border: none;
+        border-bottom: 1px solid rgba(201, 168, 71, 0.25);
+        background-color: rgba(255, 255, 255, 0.07);
+        color: #ffffff;
+        font-size: 0.88em;
+    }
+    /* Styling mobile nav links when hovered on or when that place is what is active and has been clciked on */
+    .nav-link:hover,
+    .nav-active {
+        background-color: rgba(201, 168, 71, 0.2);
+        color: #C9A847;
+    }
+
+    /* Reducing hero padding on mobile */
+    .hero {
+        padding: 32px 16px;
+        gap: 14px;
+    }
+    /* Making the hero heading smaller on mobile */
+    .hero-heading {
+        font-size: 1.4em;
+    }
+    /* Making the hero paragraph text slightly smaller on mobile */
+    .hero-sub {
+        font-size: 0.88em;
+    }
+    /* Reducing the hero image height on mobile */
+    .hero-img {
+        height: 200px;
+    }
+    /* Stacking the two hero buttons vertically on mobile */
+    .hero-btns {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    /* Giving each button a consistent width when stacked on mobile */
+    .hero-btns .btn {
+        width: 220px;
+        text-align: center;
+    }
+
+    /* Sections stack and reduce padding */
+    .section-why,
+    .section-split,
+    .section-history,
+    .section-purpose {
+        padding: 32px 16px;
+    }
+
+    .section-heading {
+        font-size: 1.4em;
+    }
+    /* Stacking cards into one column on mobile */
+    .cards-row {
+        flex-direction: column;
+        gap: 14px;
+    }
+    /* Each card takes full width on mobile */
+    .card {
+        flex: 1 1 100%;
+    }
+
+    /* Reducing marquee padding on mobile */
+    .marquee-strip {
+        padding: 10px 20px;
+    }
+    /* Allowing the marquee text to wrap on small screens */
+    .marquee-text {
+        white-space: normal;
+        line-height: 1.8;
+    }
+    /* Stacking the bridge strip text and button vertically on mobile */
+    .bridge-inner {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0 16px;
+        gap: 14px;
+    }
+    /* Reducing footer padding on mobile */
+    .site-footer {
+        padding: 24px 16px;
+    }
+    /* Reducing the gap between footer links on mobile */
+    .footer-nav {
+        gap: 16px;
+    }
+}
