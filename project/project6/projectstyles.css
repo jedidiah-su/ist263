@@ -135,8 +135,8 @@ figcaption {
 }
 /* Styling the small greeting line at the top of the hero */
 .hero-greeting {
-    color: rgba(255, 255, 255, 0.7);
-    font-family: Arial, sans-serif;
+    color: #ffffffb3;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 0.85em;
     font-style: italic;
     letter-spacing: 1px;
@@ -166,8 +166,8 @@ figcaption {
 
 /* Styling the paragraph below the hero image */
 .hero-sub {
-    color: rgba(255, 255, 255, 0.85);
-    font-family: Arial, sans-serif;
+    color: #ffffffd9;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 0.95em;
     line-height: 1.7;
     max-width: 580px;
@@ -185,7 +185,7 @@ figcaption {
 /* Setting the shared base styles for all buttons on the page */
 .btn {
     display: inline-block;
-    font-family: Arial, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 0.85em;
     font-weight: bold;
     padding: 11px 28px;
@@ -242,7 +242,7 @@ figcaption {
 
 /* Keeping the marquee text on one line so it does not wrap */
 .marquee-text {
-    color: rgba(255, 255, 255, 0.88);
+    color: #ffffffe0;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 0.82em;
     font-style: italic;
@@ -461,7 +461,7 @@ figcaption {
  
 /* Styling the description paragraph for each timeline event */
 .timeline-body p {
-    font-family: Arial, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 0.85em;
     color: #666666;
     line-height: 1.65;
@@ -542,7 +542,7 @@ figcaption {
 }
 /* Styling each footer link */
 .footer-nav a {
-    color: rgba(255, 255, 255, 0.65);
+    color: #ffffffa6;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 0.82em;
     text-decoration: none;
@@ -646,15 +646,15 @@ figcaption {
         width: 100%;
         padding: 10px 16px;
         border: none;
-        border-bottom: 1px solid rgba(201, 168, 71, 0.25);
-        background-color: rgba(255, 255, 255, 0.07);
+        border-bottom: 1px solid #c9a84740;
+        background-color: #ffffff12;
         color: #ffffff;
         font-size: 0.88em;
     }
     /* Styling mobile nav links when hovered on or when that place is what is active and has been clciked on */
     .nav-link:hover,
     .nav-active {
-        background-color: rgba(201, 168, 71, 0.2);
+        background-color: #c9a84733;
         color: #C9A847;
     }
 
