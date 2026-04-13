@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 13</title>
+    <style>
+       .skip{
+        background-color: bisque;
+        padding:8px;
+        border: 2px solid #000000;
+        text-decoration: none;
+        position:absolute; /* positions relative to the top and bottom of viewport*/
+        top: 10px;
+        left: -999px; /* pusj this button far off the page, it camn be any number but far enough to be off the page, so it shows on the page but its just off the page*/
+       }
+       .skip:focus{ /* pseudo selector, yhe class of skip whenm it is in the focus state, so when the button is tabbed to so with the left it comes back to show 10 from top and 10 from left*/
+        left: 10px;
+
+       }
+       
+    </style>
+</head>
+<body>
+    <nav>
+        <!--  dont forget bookmark link in skip to content -->
+          <a href="#skip" class="skip">Skip to Content</a><br>
+        <!--  dont forget bookmark link in skip to content -->
+          <a href="http://ww.amazon.com" tabindex="3">Amazon</a><br>
+          <a href="http://ww.google.com" tabindex="2">Amazon</a><br>
+          <a href="http://ww.ebay.com" tabindex="1">Amazon</a>
+    
+    </nav>
+    <h1 id="skip"> All the A11y techniques</h1>
+    
+    
+
+</body>    
+</html>
