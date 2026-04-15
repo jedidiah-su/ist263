@@ -1,0 +1,126 @@
+/* Body background and default text color*/
+body {
+    background-color: #f6e0b5;
+    color: #66545e;
+    font-family: Garamond, serif;
+}
+
+/*Skip to content accessibility button*/
+.skip {
+            background-color: bisque;
+            padding:8px;
+            border: 2px solid #000000;
+            text-decoration: none;
+            position: absolute; /* positions relative to the top and bottom of viewport*/
+            top: auto;
+            width: 1px;
+            height: 1px;
+            left: -999px; /* pusj this button far off the page, it camn be any number but far enough to be off the page, so it shows on the page but its just off the page*/
+       }
+       /* pseudo selector, yhe class of skip whenm it is in the focus state, so when the button is tabbed to so with the left it comes back to show 10 from top and 10 from left*/
+       .skip:focus { 
+            left: 10px;
+            width:auto;
+            position:static;
+       }
+
+  /* Styles for tablet and smaller screens  */
+@media only screen and (max-width: 800px) {
+    nav a {
+        display: block;
+        width: 100%;
+        padding: 10px;
+    }
+    nav span {
+        display: none;
+    }
+
+}
+
+/*Flexible Image Styling*/
+.banner{max-width: 100%;}
+
+/*Table Styling*/
+.evenrow{background-color: #ab8841;}
+
+ /*Links*/
+a {color: #aa6f73;}
+
+/*Headings*/
+h1, h2 {color: #aa6f73;}
+h1{font-size: 3em;}
+h2{font-size: 2em;}
+
+/*Navigation background*/
+nav {
+    background-color: #66545e; 
+    padding: 10px; 
+    margin-bottom: 30px;
+}
+/*Pipes color so it shows*/
+nav span{color:#f6e0b5}
+
+/*Navigation links*/
+nav a {color: #f6e0b5;}
+
+/*Navigation hover highlight*/
+nav a:hover {background-color: #eea990;}
+
+/*Footer Quote on right and copyright on left*/
+.copyright {
+    float: left;
+}
+.quote{float:right;}
+
+iframe{width:100%;}
+
+/*Flexbox row for contact page*/
+.row {
+    display: flex;
+    flex-wrap:wrap;
+    margin: 20px; 
+    background-color: #f0f5f6;
+    border-radius: 1em;
+    padding: 1em;   
+}
+/*Extra spacing between first and second row*/
+.row:first-of-type {
+    margin-bottom: 2em;   
+}
+/*Flexbox column for contact page*/
+.column {
+    flex: 1;  
+    padding: 2em;
+}
+/*First and last name input width to handle it fitting any kind of screen size*/
+#fname, #lname {
+    width: 100%;
+}
+/*Text and email input styling*/
+form input[type="text"],
+form input[type="email"] {
+    width: 90%;
+    padding: 8px;
+    margin: 6px 0 14px 0;
+    border: 1px solid #aa6f73;
+    border-radius: 4px;
+}
+/*Submit button styling*/
+form input[type="submit"] {
+    background-color: #66545e;
+    color: #f6e0b5;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+/*Submit button hover*/
+form input[type="submit"]:hover {
+    background-color: #aa6f73;
+}
+/*Form Label styling*/
+form label {
+    font-weight: bold;
+    color: #66545e;
+}
