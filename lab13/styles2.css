@@ -44,7 +44,7 @@ body {
 .evenrow{background-color: #d1a68f;}
 
  /*Links*/
-a {color: #aa6f73;}
+a {color: #262220;}
 
 /*Headings*/
 h1, h2 {color: #262220;}
@@ -61,7 +61,7 @@ nav {
 nav span{color:#f6e0b5}
 
 /*Navigation links*/
-nav a {color: #f6e0b5;}
+nav a {color: #2b2028;}
 
 /*Navigation hover highlight*/
 nav a:hover {background-color: #eea990;}
