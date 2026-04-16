@@ -1,7 +1,7 @@
 /* Body background and default text color*/
 body {
-    background-color: #f6e0b5;
-    color: #66545e;
+    background-color: #f7f1f0;
+    color: #262220;
     font-family: Garamond, serif;
 }
 
@@ -41,13 +41,13 @@ body {
 .banner{max-width: 100%;}
 
 /*Table Styling*/
-.evenrow{background-color: #ab8841;}
+.evenrow{background-color: #d1a68f;}
 
  /*Links*/
 a {color: #aa6f73;}
 
 /*Headings*/
-h1, h2 {color: #aa6f73;}
+h1, h2 {color: #262220;}
 h1{font-size: 3em;}
 h2{font-size: 2em;}
 
