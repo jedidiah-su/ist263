@@ -4,8 +4,8 @@ body {
     color: #262220;
     font-family: Garamond, serif;
 }
-/* Making my image responsive*/
-.banner{max-width: 100%;}
+/* Making my image take full width*/
+.banner{width: 100%;}
 
 /*Skip to content accessibility button*/
 .skip {
