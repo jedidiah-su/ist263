@@ -7,6 +7,15 @@ body {
 /* Making my image take full width*/
 .banner{width: 100%;}
 
+
+/* Google font*/
+.cormorant-heading {
+  font-family: "Cormorant", serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+}
+
 /*Skip to content accessibility button*/
 .skip {
             background-color: bisque;
