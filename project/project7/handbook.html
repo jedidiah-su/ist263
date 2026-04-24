@@ -12,52 +12,63 @@
 </head>
 <body>
  
-    <header>
-        <nav>
-            <a href="index.html">Home</a> <span>|</span>
-            <a href="culture.html">Culture, Coastlines &amp; Community</a> <span>|</span>
-            <a href="handbook.html">The Liberia Handbook</a> <span>|</span>
-            <a href="handbook.html">Plan Your Trip</a>
+    <header class="site-header">
+        <nav class="nav-bar">
+            <a href="index.html" class="nav-brand">Discover West Africa</a>
+
+            <!-- Hamburger button which shows on smaller screens and get hidden on bigger screens, the function gets called when clicked -->
+            <button class="nav-toggle" onclick="toggleMenu()">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+ 
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html" class="nav-link nav-active">Home</a></li>
+                <li><a href="culture.html" class="nav-link">Culture, Coastlines &amp; Community</a></li>
+                <li><a href="handbook.html" class="nav-link">The Liberia Handbook</a></li>
+                <li><a href="handbook.html" class="nav-link">Plan Your Trip</a></li>
+            </ul>
         </nav>
     </header>
  
     <main>
- 
-        <section>
-            <h1>The Liberia Handbook</h1>
-            <p>Everything you need before, during, and after your trip.</p>
-            <figure>
-                <img src="../webmedia/canoesailing.jpg" alt="Canoe Sailing">
+        <!-- Page Banner -->
+        <section class="page-banner">
+            <p class="banner-label">Food, Money, Safety, Travel</p>
+            <h1 class="banner-heading">The Liberia Handbook</h1>
+            <p class="banner-sub">Everything you need before, during, and after your trip.</p>
+            <figure class="banner-figure">
+                <img class="banner-img" src="../webmedia/canoesailing.jpg" alt="Canoe Sailing">
                 <figcaption>Liberia — a country where every coast, market, and meal tells a story of resilience and culture</figcaption>
             </figure>
         </section>
  
         <!-- In-page Jump Navigation -->
-        <nav>
-            <h2>Jump to a Section</h2>
-            <ul>
-                <li><a href="#understanding-liberia">Why History Matters</a></li>
-                <li><a href="#language">Language &amp; Phrases</a></li>
-                <li><a href="#food">Food &amp; Dining</a></li>
-                <li><a href="#safety">Safety</a></li>
-                <li><a href="#money">Money &amp; Currency</a></li>
-                <li><a href="#transport">Transport</a></li>
-                <li><a href="#best-time">Best Time to Visit</a></li>
-                <li><a href="#support-local">Support Local Economy</a></li>
-                <li><a href="#environment">Environmental Responsibility</a></li>
+        <nav class="handbook-nav">
+            <h2 class="handbook-nav-heading">Jump to a Section</h2>
+            <ul class="handbook-nav-list">
+                <li><a href="#understanding-liberia" class="handbook-nav-link">Why History Matters</a></li>
+                <li><a href="#language" class="handbook-nav-link">Language &amp; Phrases</a></li>
+                <li><a href="#food" class="handbook-nav-link">Food &amp; Dining</a></li>
+                <li><a href="#practical" class="handbook-nav-link">Safety, Money &amp; Transport</a></li>
+                <li><a href="#best-time" class="handbook-nav-link">Best Time to Visit</a></li>
+                <li><a href="#responsible" class="handbook-nav-link">Responsible Travel</a></li>
+                <li><a href="#plan" class="handbook-nav-link">Plan Your Journey</a></li>
             </ul>
         </nav>
  
         <!-- Why History Matters for Travelers -->
-        <section id="understanding-liberia">
-            <h2>Why Liberia's History Matters When You Visit</h2>
+        <section class="section-intro" id="understanding-liberia">
+            <p class="eyebrow">Context for Travelers</p>
+            <h2 class="section-heading">Why Liberia's History Matters When You Visit</h2>
             <figure>
-                <img src="../webmedia/DSCF9711.jpgDSCF9711.jpg" alt="a mode of transport">
+                <img class="split-img" src="../webmedia/DSCF9711.jpgDSCF9711.jpg" alt="a mode of transport">
                 <figcaption>Despite everything Liberia has been through, its people remain some of the warmest and most welcoming in West Africa</figcaption>
             </figure>
             <p>Understanding Liberia's background shapes every interaction you'll have — from the roads you drive on to the warmth with which people welcome you. For the full founding story, <a href="index.html#why-liberia">see Liberia's Unique Story on the Home page</a>. What follows is what that history means practically for your experience as a visitor.</p>
-            <h3>What You Will See and Why</h3>
-            <ul>
+            <h3 class="sub-heading">What You Will See and Why</h3>
+            <ul class="matters-list">
                 <li><strong>The resilience of people</strong> — Liberians have lived through so much yet remain welcoming and hopeful. That warmth is not performance; it is deeply genuine.</li>
                 <li><strong>Infrastructure challenges</strong> — Poor roads, limited facilities, and intermittent utilities reflect the aftermath of civil wars that ended only in 2003, not lack of capability or effort.</li>
                 <li><strong>Authentic connection</strong> — The warmth you experience shows Liberians' determination to be defined by hope and community, not by trauma. Come with patience and you will leave changed.</li>
@@ -66,12 +77,13 @@
         </section>
  
         <!-- Language and Phrases -->
-        <section id="language">
-            <h2>Language &amp; Communication</h2>
+        <section class="section-alt" id="language">
+            <p class="eyebrow">Communication</p>
+            <h2 class="section-heading">Language &amp; Communication</h2>
             <p>English is Liberia's official language. However, Liberian English — sometimes called "Kolokwa" — has distinctive pronunciation, vocabulary, and grammar that may take adjustment. Many Liberians are multilingual, speaking English plus one or more indigenous languages.</p>
  
-            <h3>Common Liberian Phrases</h3>
-            <table>
+            <h3 class="sub-heading">Common Liberian Phrases</h3>
+            <table class="data-table">
                 <caption>Useful phrases to know before you go</caption>
                 <thead>
                     <tr>
@@ -97,192 +109,254 @@
                         <td>You're not in a situation, you don't know what it's like</td>
                     </tr>
                     <tr>
-                        <td>"My pepo yor"</td>
-                        <td>Thank you / expressing gratitude</td>
+                        <td>"My pepo yor thank you"</td>
+                        <td>Thank you / expressing gratitude to a group</td>
                     </tr>
                 </tbody>
             </table>
  
-            <h3>Indigenous Languages</h3>
+            <h3 class="sub-heading">Indigenous Languages</h3>
             <p>Kpelle is the most widely spoken indigenous language, followed by Bassa as the second most common. Regional languages include Gio, Mano, Grebo, Kru, Gola, Kissi, and Vai. Learning a few basic greetings in local languages is always appreciated, though English works everywhere.</p>
  
-            <h3>Religion</h3>
+            <h3 class="sub-heading">Religion</h3>
             <p>Religious tolerance is generally strong in Liberia. The population is dominantly Christian with Islam as the next most common religion.</p>
         </section>
  
         <!-- Food and Dining — Mosaic Layout (Distinct Layout #2) -->
-        <section id="food">
-            <h2>Liberian Food &amp; Dining</h2>
-            <p>Liberian cuisine deeply reflects West African traditions. Food is central to Liberian hospitality and such a core part of the experience. Take time to explore local food — it will be one of the highlights of your visit.</p>
+        <section class="section-intro" id="food">
+            <p class="eyebrow">Food &amp; Outing</p>
+            <h2 class="section-heading">Liberian Food &amp; Dining</h2>
+            <p>Liberian cuisine deeply reflects West African traditions. Food is central to Liberian hospitality and such a core part of the experience. Take time to explore local food — it will be one of the highlights of your visit. Some popular dishes to try are: </p>
  
-            <h3>Essential Dishes to Try</h3>
  
-            <article>
-                <h4>Dumboy &amp; Pepper Soup — Must Try</h4>
-                <figure>
-                    <img src="../webmedia/fufuandsoup.JPG" alt="Dumboy--cassava dough ready to be pinched and dipped served alongside rich pepper soup broth in a traditional Liberian setting, ">
-                    <figcaption>Dumboy &amp; Pepper Soup — One of Liberia's most iconic dish, traditionally eaten communally by hand</figcaption>
+            <div class="food-mosaic">
+                <figure class="food-mosaic-main">
+                    <img src="../webmedia/fufuandsoup.JPG" alt="Dumboy and Pepper Soup — one of Liberia's most iconic dishes traditionally eaten communally by hand">
+                    <figcaption>Dumboy &amp; Pepper Soup — One of Liberia's most iconic dish, traditionally eaten by hand Picture:Asante's Kitchen</figcaption>
                 </figure>
-                <p>Cassava dough pounded until sticky and stretchy, served with pepper soup — a spiced seafood broth. Eating dumboy is traditionally communal and hands-on: pinch off a piece, roll it, dip it in the soup, and eat with your right hand. Often eaten with a spoon at restaurants.</p>
-            </article>
+               <div class="food-mosaic-grid">
+                    <figure class="food-mosaic-item">
+                        <img class="food-mosaic-img-small" src="../webmedia/cassavaleaf.JPG" alt="Cassava Leaf stew">
+                        <figcaption>Cassava Leaf — hearty pounded leaf sauce commonly served over rice Picture:Asante's Kitchen</figcaption>
+                    </figure>
+                    <figure class="food-mosaic-item">
+                        <img class="food-mosaic-img-small" src="../webmedia/dryrice.JPG" alt="Dry Rice with fish">
+                        <figcaption>Dry Rice — a typical Saturday household staple which is totally contradictory to the name as it is served with alot of protein like fish etc. Picture:Asante's Kitchen</figcaption>
+                    </figure>
+                    <figure class="food-mosaic-item">
+                        <img class="food-mosaic-img-small" src="../webmedia/jollofgemini.png" alt="Liberian Jollof Rice served with chicken">
+                        <figcaption>Liberian Jollof — bold spice and generous protein</figcaption>
+                    </figure>
+                    <figure class="food-mosaic-item">
+                        <img class="food-mosaic-img-small" src="../webmedia/kala.JPG" alt="Kala fried dough balls">
+                        <figcaption>Kala — sweet fried dough balls, popular for breakfast or snack and served with peppersauce-Picture:Asante's Kitchen</figcaption>
+                    </figure>
+                </div>
+            </div>
  
-            <article>
-                <h4>Cassava Leaf</h4>
-                <figure>
-                    <img src="../webmedia/cassavaleaf.JPG" alt="Cassava Leaf stew ">
-                    <figcaption>Cassava Leaf — hearty pounded leaf sauce served over rice, a Liberian staple</figcaption>
-                </figure>
-                <p>Young cassava leaves pounded and cooked with palm oil or vegetable oil, onions, and meat or fish to create a hearty semi-thick sauce. Served over rice.</p>
-            </article>
  
-            <article>
-                <h4>Dry Rice</h4>
-                <figure>
-                    <img src="../webmedia/dryrice.JPG" alt="Dry Rice with fish">
-                    <figcaption>Dry Rice with Fried Fish</figcaption>
-                </figure>
-                <p>A typical saturday household staple in Liberia. It is cooked with rice and protein preferences but typically with salted pork and smoked fish and served alonside fried fish.</p>
-            </article>
+            <h3 class="sub-heading">Where to Eat</h3>
+            <ul class="cards-row">
+                <li class="card">
+                    <div class="card-header">Cold Bowl Shops</div>
+                    <div class="card-body">
+                        <h4 class="card-title">Most Authentic</h4>
+                            <p>Small, informal roadside restaurants serving authentic Liberian food. Food is cheap but facilities are basic — plastic chairs, simple plates, and usually dished out from a big pot. The most immersive food experience available.</p>
+                    </div>
+                </li>
+                <li class="card">
+                    <div class="card-header">Monrovia Restaurants</div>
+                    <div class="card-body">
+                        <h4 class="card-title">Formal Dining</h4>
+                        <p>Some Popular Restauracnts are: Evelyn's Restaurant, Royal Hotel, Boulevard Palace, and Mamba Point hotel offering more formal dining. The Sinkor area has multiple restaurants. Lebanese and Chinese restaurants also being quite common, reflect Liberia's diversity.</p>
+                    </div>
+                </li>
+                <li class="card">
+                    <div class="card-header">Street Food</div>
+                    <div class="card-body">
+                        <figure>
+                            <img class="food-img" src="../webmedia/sinkor.jpg" alt="Main street of Sinkor showing street food vendors">
+                            <figcaption>Street food citywide</figcaption>
+                        </figure>
+                        <h4 class="card-title">Quick &amp; Fresh</h4>
+                        <p>Grilled fish, fried plantains, roasted meat sold fresh citywide. Safe if cooked fresh in front of you. A tip to note is to lean more on the side of drinking bottled water though and never tap water.</p>
+                    </div>
+                </li>
+            </ul>
  
-            <article>
-                <h4>Liberian Jollof Rice</h4>
-                <figure>
-                    <img src="../webmedia/jollofgemini.png" alt="Liberian Jollof Rice served with chicken showing the tomato-based spiced rice with generous protein portions">
-                    <figcaption>Liberian Jollof Rice — the West African staple with generous protein and bold spicy flavor</figcaption>
-                </figure>
-                <p>The West African staple — there is always an informal debate between African countries as to who prepares it best, maybe you can be the judge. Liberian jollof is made with tomato paste, onions, peppers, and spices, often served with chicken. It stands out for its generous protein portions and spicy flavor.</p>
-            </article>
- 
-            <article>
-                <h4>Pepper Soup</h4>
-                <p>Spicy, aromatic broth made with local spices, scotch bonnet peppers, and fish or meat. The spice level can be intense — approach with caution if you are not used to West African heat.</p>
-            </article>
- 
-            <article>
-                <h4>Fufu</h4>
-                <p>Made from cassava — sometimes with plantain — pounded until smooth and served as a starchy accompaniment to soups and stews. Eaten by hand like dumboy.</p>
-            </article>
- 
-            <article>
-                <h4>Kala — Street Snack</h4>
-                <figure>
-                    <img src="../webmedia/kala.JPG" alt="Kala fried dough balls on a plate showing the sweet round golden-brown snack served with pepper sauce by street vendors">
-                    <figcaption>Kala — sweet fried dough balls sold hot by street vendors, popular for breakfast</figcaption>
-                </figure>
-                <p>Fried dough balls sold by street vendors. Sweet, round, and served hot with pepper sauce on the side and a protein choice. Popular for breakfast or as a snack.</p>
-            </article>
- 
-            <h3>Where to Eat</h3>
- 
-            <article>
-                <h4>Cold Bowl Shops</h4>
-                <p>Small, informal roadside restaurants serving authentic Liberian food. Food is cheap but facilities are basic — plastic chairs, simple plates, and usually dished out from a big pot. The most immersive food experience available.</p>
-            </article>
- 
-            <article>
-                <h4>Monrovia Restaurants</h4>
-                <p>Evelyn's Restaurant, Royal Hotel, Boulevard Palace, and Mamba Point hotel offer more formal dining with Liberian and international options. The Sinkor area has multiple restaurants to choose from. Lebanese and Chinese restaurants also exist, reflecting the diversity in Liberia.</p>
-            </article>
- 
-            <article>
-                <h4>Street Food</h4>
-                <figure>
-                    <img src="../webmedia/sinkor.jpg" alt="Main street of sinkor">
-                    <figcaption>Street food — grilled fish, fried plantains, and roasted meat sold fresh citywide</figcaption>
-                </figure>
-                <p>Street vendors throughout cities sell grilled fish, fried plantains, roasted meat, and snacks. Food is generally safe if cooked fresh in front of you. Always drink bottled or filtered water — never tap water.</p>
-            </article>
- 
-            <p><strong>Important:</strong> Most restaurants are cash-only. Expect generous portions — rice forms the base of most meals.</p>
+            <p><strong>Important:</strong> Most restaurants are cash-only.<br> Expect generous portions<br> Rice forms the base of most meals.</p>
         </section>
  
-        <!-- Safety -->
-        <section id="safety">
-            <h2>Safety Considerations</h2>
-            <p>Liberia is generally safe for tourists but use common urban precautions. Violent crime against tourists is rare. Liberians are generally honest and helpful, but poverty creates challenges for some — petty theft can occur especially in busy areas. Try to stay in a group of familiar faces at night and avoid poorly lit areas.</p>
-        </section>
+        <!-- Safety and practical tips -->
+        <section class="section-alt" id="practical">
+            <p class="eyebrow">Out &amp; About</p>
+            <h2 class="section-heading">What to Know</h2>
  
-        <!-- Money -->
-        <section id="money">
-            <h2>Money &amp; Currency</h2>
-            <p>Both Liberian Dollars (LRD) and U.S. Dollars (USD) circulate. Larger transactions usually happen in USD, smaller purchases in LRD. Bring USD in good condition — no torn or very old bills, as these may be rejected. ATMs exist in Monrovia but can be unreliable. Bring enough cash for your stay.</p>
-        </section>
+            <div class="practical-layout">
  
-        <!-- Transport -->
-        <section id="transport">
-            <h2>Transportation</h2>
-            <p>Getting around Liberia can be challenging. Roads are often rough. During rainy season (May–October), some roads become impassable. Taxis and private drivers are available in Monrovia. For longer trips, hiring a driver with a 4x4 vehicle is recommended.</p>
-            <p>Recommended tour guides for county visits: <strong>Lauretta Cisse</strong> and <strong>Tuzee Toure</strong>.</p>
+                <!-- Left column: two stacked images -->
+                <div class="practical-img-stack">
+                    <figure>
+                        <img class="practical-img" src="../webmedia/westpointsunset.jpg" alt="Westpoint sunset near Monrovia">
+                        <figcaption>Westpoint area near Monrovia</figcaption>
+                    </figure>
+                    <figure>
+                        <img class="practical-img" src="../webmedia/canoesailing.jpg" alt="Canoe sailing on the Liberian coast">
+                        <figcaption>A canoe salining on the coast</figcaption>
+                    </figure>
+                </div>
+ 
+                <!-- Right column: tabbed content panel -->
+                <div class="practical-tabs">
+ 
+                    <!-- Tab navigation buttons -->
+                    <div class="tab-nav">
+                        <button class="tab-btn tab-active" id="btn-safety" onclick="showTab('safety')">Safety</button>
+                        <button class="tab-btn" id="btn-money" onclick="showTab('money')">Money</button>
+                        <button class="tab-btn" id="btn-transport" onclick="showTab('transport')">Transport</button>
+                    </div>
+ 
+                    <!-- Safety tab — shown by default -->
+                    <div class="tab-content" id="tab-safety">
+                        <h3 class="tab-heading">Safety Considerations</h3>
+                        <p>Liberia is generally safe for tourists but use common urban precautions. Violent crime against tourists is rare. Liberians are generally honest and helpful, but poverty creates challenges for some — petty theft can occur especially in busy areas.</p>
+                        <p>Try to stay in a group of familiar faces at night and avoid poorly lit areas. Be particularly cautious in busy markets with your belongings.</p>
+                    </div>
+ 
+                    <!-- Money tab — hidden by default, shown when clicked -->
+                    <div class="tab-content" id="tab-money" style="display:none;">
+                        <h3 class="tab-heading">Money &amp; Currency</h3>
+                        <p>Both Liberian Dollars (LRD) and U.S. Dollars (USD) circulate. Larger transactions usually happen in USD, smaller purchases in LRD.</p>
+                        <p>Bring USD in good condition — no torn or very old bills, as these may be rejected. ATMs exist in Monrovia but can be a bit unreliable, it is advisable to come with cash that can last a good amount of time incase unavailability of ATM's at crucial times.</p>
+                    </div>
+ 
+                    <!-- Transport tab — hidden by default, shown when clicked -->
+                    <div class="tab-content" id="tab-transport" style="display:none;">
+                        <h3 class="tab-heading">Transportation</h3>
+                        <p>Getting around Liberia can be challenging. Roads are often rough. During rainy season (May–October), some roads become impassable.</p>
+                        <p>Taxis and private drivers are available in Monrovia. For longer trips, hiring a driver with a good vehicle is recommended. Recommended tour guides: <strong>Lauretta Cisse</strong> and <strong>Tuzee Toure</strong>.</p>
+                    </div>
+                </div>
+            </div>
         </section>
  
         <!-- Best Time to Visit -->
-        <section id="best-time">
-            <h2>Best Time to Visit</h2>
+        <section class="section-intro" id="best-time">
+            <p class="eyebrow">Planning Your Trip</p>
+            <h2 class="section-heading">Best Time to Visit</h2>
+            <div class="season-toggle">
+                <!-- Two toggle buttons — Dry Season active by default -->
+                <div class="season-btns">
+                    <button class="season-btn season-btn-active" id="btn-dry" onclick="showSeason('dry')">Dry Season</button>
+                    <button class="season-btn" id="btn-rainy" onclick="showSeason('rainy')">Rainy Season</button>
+                </div>
  
-            <article>
-                <h3>Dry Season (November–April) — Recommended</h3>
-                <p>Roads are more passable, weather is sunny and hot, and travel is easier. The best time to explore rural counties, beaches, and natural areas across the country.</p>
-            </article>
+                <!-- Dry season info box — shown by default -->
+                <div class="season-info" id="season-dry">
+                    <h3 class="season-info-heading">Dry Season (November–April) — Recommended</h3>
+                    <p>Roads are more passable, weather is sunny and hot, and travel is easier. The best time to explore rural counties, beaches, and natural areas. Most activities and tours operate during this period.</p>
+                </div>
+                <!-- Rainy season info box — hidden by default -->
+                <div class="season-info" id="season-rainy" style="display:none;">
+                    <h3 class="season-info-heading">Rainy Season (May–October) — Approach with Caution</h3>
+                    <p>Heavy rains make travel difficult. Roads become muddy or impassable, some areas flood, and outdoor activities are limited. You can visit at this time if you have specific reasons such as volunteer work or not much of a big fan of heat or outdoor activities.</p>
+                </div>
+            </div>
+        </section>
+            
  
-            <article>
-                <h3>Rainy Season (May–October) — Approach with Caution</h3>
-                <p>Heavy rains make travel difficult. Roads become muddy or impassable, some areas flood, and outdoor activities are limited. Unless you have specific reasons, avoid this season.</p>
-            </article>
+        <!-- Responsible Travel & Support Local Economy -->
+        <section class="section-alt" id="responsible">
+            <p class="eyebrow">Responsible Travel</p>
+            <h2 class="section-heading">Travel With Intention</h2>
+            <div class="support-row">
+                <article class="support-card">
+                    <h3 class="support-heading">Support Local Economy</h3>
+                    <p>Support Liberian-owned guesthouses, restaurants, and guides where possible. Your spending has greater direct impact in a developing economy than anywhere else you will travel.</p>
+                </article>
+                <article class="support-card">
+                    <h3 class="support-heading">Environmental Responsibility</h3>
+                    <p>Liberia has limited waste management. Avoid single-use plastics where possible, dispose of trash properly — which may mean carrying it with you — and be mindful of your environmental impact throughout your stay.</p>
+                </article>
+            </div>
         </section>
  
-        <!-- Support Local Economy -->
-        <section id="support-local">
-            <h2>Support Local Economy</h2>
-            <p>Tourism infrastructure is limited, but support Liberian-owned guesthouses, restaurants, and guides where possible. Your spending has greater direct impact in a developing economy than anywhere else you will travel.</p>
-        </section>
- 
-        <!-- Environmental Responsibility -->
-        <section id="environment">
-            <h2>Environmental Responsibility</h2>
-            <p>Liberia has limited waste management. Avoid single-use plastics where possible, dispose of trash properly — which may mean carrying it with you — and be mindful of your environmental impact throughout your stay.</p>
-        </section>
- 
-        <!-- Plan Your Trip Final CTA -->
-        <section>
-            <h2>Plan Your Liberia Journey</h2>
-            <p>Whether you're a solo traveler, joining a volunteer organization, or traveling with purpose — Liberia rewards those who come with an open heart and genuine curiosity.</p>
-            <ul>
-                <li>
-                    <h3>Solo Traveler</h3>
-                    <p>Hire a local tour guide especially for county visits. Recommended: <strong>Lauretta Cisse</strong> and <strong>Tuzee Toure</strong> — both offer structured, meaningful travel experiences.</p>
+        <!-- Plan Your Trip -->
+        <section class="section-cta" id="plan">
+            <p class="eyebrow eyebrow-light">Ready?</p>
+            <h2 class="section-heading section-heading-light">Plan Your Liberia Journey</h2>
+            <p class="section-lead section-lead-light">Whether you're a solo traveler, joining a volunteer organization, or traveling with purpose — Liberia rewards those who come with an open heart and genuine curiosity.</p>
+            <ul class="cards-row">
+                <li class="card card-dark">
+                    <div class="card-header card-header-dark">Solo Traveler</div>
+                    <div class="card-body">
+                        <h3 class="card-title card-title-light">Independent Travel</h3>
+                        <p class="card-text-light">Hire a local tour guide especially for county visits. Recommended: <strong>Lauretta Cisse</strong> and <strong>Tuzee Toure</strong> — both offer structured, meaningful travel experiences.</p>
+                    </div>
                 </li>
-                <li>
-                    <h3>Volunteer &amp; Organizational Travel</h3>
-                    <p>Connect through organizations working on education, agriculture, or community development for the deepest cultural immersion possible.</p>
+                <li class="card card-dark">
+                    <div class="card-header card-header-dark">Volunteer &amp; Organizational Travel</div>
+                    <div class="card-body">
+                        <h3 class="card-title card-title-light">Immersive Experience</h3>
+                        <p class="card-text-light">Connect through organizations working on education, agriculture, or community development for the deepest cultural immersion possible.</p>
+                    </div>
                 </li>
-                <li>
-                    <h3>Travel with Purpose</h3>
-                    <p>Stay Liberian-owned. Eat cold bowl. Use local guides. Your spending has real, direct impact in an economy that is still rebuilding.</p>
+                <li class="card card-dark">
+                    <div class="card-header card-header-dark">Travel with Purpose</div>
+                    <div class="card-body">
+                        <h3 class="card-title card-title-light">Make an Impact</h3>
+                        <p class="card-text-light">Stay Liberian-owned. try local food. Use local guides. Your spending has real, direct impact in an economy that is still rebuilding.</p>
+                    </div>
                 </li>
             </ul>
-            <p>
-                <a href="index.html">&larr; Back to Home</a> |
-                <a href="culture.html">Explore Destinations &rarr;</a>
-            </p>
+            <div class="cta-btns">
+                <a href="index.html" class="btn btn-outline">&larr; Back to Home</a> |
+                <a href="culture.html" class="btn btn-gold">Explore Destinations &rarr;</a>
+            </div>
         </section>
  
     </main>
  
-    <footer>
-        <nav>
+    <footer class="site-footer">
+        <nav class="footer-nav">
             <a href="index.html">Home</a> |
             <a href="culture.html">Culture, Coastlines &amp; Community</a> |
             <a href="handbook.html">The Liberia Handbook</a>
         </nav>
-        <p>&copy; Discover Liberia &mdash; West Africa Travel Guide</p>
+        <p class="footer-copy">&copy; <strong>Discover Liberia</strong> &mdash; West Africa Travel Guide</p>
     </footer>
 
-<!-- JavaScript for the mobile hamburger menu toggle -->
+
 <script>
+    /* JavaScript for the mobile hamburger menu toggle*/
     function toggleMenu() {
         var links = document.querySelector('.nav-links');
         links.classList.toggle('nav-links-open');
     }
+    /* Tab switcher for Safety / Money / Transport section
+           Hides all tab panels then shows the one matching the button clicked */
+        function showTab(tabName) {
+            var contents = document.querySelectorAll('.tab-content');
+            for (var i = 0; i < contents.length; i++) {
+                contents[i].style.display = 'none';
+            }
+            var buttons = document.querySelectorAll('.tab-btn');
+            for (var i = 0; i < buttons.length; i++) {
+                buttons[i].classList.remove('tab-active');
+            }
+            document.getElementById('tab-' + tabName).style.display = 'block';
+            document.getElementById('btn-' + tabName).classList.add('tab-active');
+        }
+ 
+        /* Season toggle for Best Time to Visit section
+           Switches the visible info box between Dry and Rainy Season */
+        function showSeason(season) {
+            document.getElementById('season-dry').style.display = season === 'dry' ? 'block' : 'none';
+            document.getElementById('season-rainy').style.display = season === 'rainy' ? 'block' : 'none';
+            document.getElementById('btn-dry').classList.toggle('season-btn-active', season === 'dry');
+            document.getElementById('btn-rainy').classList.toggle('season-btn-active', season === 'rainy');
+        }
+
 </script>
 </body>
 </html>
