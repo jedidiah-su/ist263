@@ -1,0 +1,735 @@
+/* Setting my format for the entire page */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/* Setting the font and back ground color for the page */
+body {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: #444444;
+    line-height: 1.7;
+    background-color: #ffffff;
+}
+/* Making all images responsive so they dont overflow their container */
+img {
+    max-width: 100%;
+    display: block;
+}
+/* Removing the underline from all links and setting the default link color */
+a {
+    color: #1B3A6B;
+    text-decoration: none;
+}
+/* Adding an line under links so it shows when hovering over it so users know it is clickable */
+a:hover {
+    text-decoration: underline;
+}
+ 
+/* Removing the default bullet points and numbers from all lists */
+ul, ol {
+    list-style: none;
+}
+/* Styling the small image caption text below each figure */
+figcaption {
+    font-size: 0.8em;
+    color: #999999;
+    font-style: italic;
+    margin-top: 6px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* Nav stylings */
+/* Setting the header background color and making it stick to the top as the user scrolls */
+.site-header {
+    background-color: #1B3A6B;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+/* Using flexbox to put the website name on the left and nav links on the right */
+.nav-bar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 40px;
+    height: 64px;
+}
+/* Styling the site name on the left side of the nav */
+.nav-brand {
+    color: #ffffff;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1em;
+    font-weight: bold;
+    text-decoration: none;
+    flex-shrink: 0;
+}
+/* Changing the site name color when hovered */
+.nav-brand:hover {
+    color: #C9A847;
+    text-decoration: none;
+}
+/* Using flexbox to display all nav link buttons in a horizontal row */
+.nav-links {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    list-style: none;
+}
+/* Styling each nav link to look like a gold bordered button*/
+.nav-link {
+    display: block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.78em;
+    color: #1B3A6B;
+    background-color: #F4EFD8;
+    border: solid 1.5px #C9A847;
+    padding: 6px 14px;
+    text-decoration: none;
+    white-space: nowrap;
+}
+/* Filling the button with color when the user hovers over it */
+.nav-link:hover {
+    background-color: #C9A847;
+    color: #1B3A6B;
+    text-decoration: none;
+}
+/* Highlighting the current page link so the user knows where they are */
+.nav-active {
+    background-color: #C9A847;
+    color: #1B3A6B;
+    font-weight: bold;
+}
+/* Hiding the hamburger button on big screens so it shows on mobile via the media query */
+.nav-toggle {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 26px;
+    height: 18px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+/* Styling of the three lines that make up the hamburger icon */
+.hamburger-line {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #ffffff;
+}
+/* Hero stylings */
+/* Setting the hero background and using flexbox to stack and center all content */
+.hero {
+    background-color: #1B3A6B;
+    padding: 64px 40px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+/* Styling the small greeting line at the top of the hero */
+.hero-greeting {
+    color: #ffffffb3;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.85em;
+    font-style: italic;
+    letter-spacing: 1px;
+}
+/* Styling the large main heading inside the hero */
+.hero-heading {
+    color: #ffffff;
+    font-size: 2.6em;
+    line-height: 1.1;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    max-width: 640px;
+}
+/* Containing the hero image so it fills the available width */
+.hero-figure {
+    width: 100%;
+    max-width: 900px;
+    margin: 0;
+}
+/* Making the hero image fill its container and reducing opacity so the background color shows through */
+.hero-img {
+    width: 100%;
+    height: 340px;
+    object-fit: cover;
+    display: block;
+    opacity: 0.55;
+}
+
+/* Styling the paragraph below the hero image */
+.hero-sub {
+    color: #ffffffd9;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.95em;
+    line-height: 1.7;
+    max-width: 580px;
+}
+/* Using flexbox to place the two hero buttons side by side */
+.hero-btns {
+    display: flex;
+    flex-direction: row;
+    gap: 14px;
+    flex-wrap: wrap;
+    justify-content: center;}
+
+/* Buttons */
+
+/* Setting the shared base styles for all buttons on the page */
+.btn {
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.85em;
+    font-weight: bold;
+    padding: 11px 28px;
+    text-decoration: none;
+    cursor: pointer;
+    text-align: center;
+}
+/* The filled button used in the hero */
+.btn-primary {
+    background-color: #1B3A6B;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+}
+
+/* Setting the hero button colors when hovered */
+.btn-primary:hover {
+    background-color: #ffffff;
+    color: #1B3A6B;
+    text-decoration: none;
+}
+/* The transparent outline button used in the hero */
+.btn-outline {
+    background-color: transparent;
+    color: #ffffff;
+    border: 2px solid rgba(255, 255, 255, 0.6);
+}
+ 
+/* Adding a faint white fill when the outline button is hovered */
+.btn-outline:hover {
+    background-color: rgba(255, 255, 255, 0.12);
+    text-decoration: none;
+}
+ 
+/* The bordered button used in the body sections */
+.btn-gold {
+    background-color: #F4EFD8;
+    color: #1B3A6B;
+    border: 1.5px solid #C9A847;
+    padding: 9px 22px;
+}
+/* Filling the body button fully when hovered */
+.btn-gold:hover {
+    background-color: #C9A847;
+    color: #1B3A6B;
+    text-decoration: none;
+}
+/* Styling and setting up the marquee bar */
+/* Setting the dark red background for the marquee strip */
+.marquee-strip {
+    background-color: #8B1A1A;
+    padding: 10px 40px;
+    overflow: hidden;
+}
+
+/* Keeping the marquee text on one line so it does not wrap */
+.marquee-text {
+    color: #ffffffe0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.82em;
+    font-style: italic;
+    white-space: nowrap;
+    letter-spacing: 0.5px;
+}
+/* Section Heading Stylings*/
+/* Styling the small uppercase label that appears above each section heading */
+.eyebrow {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.68em;
+    font-weight: bold;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: #1B3A6B;
+    margin-bottom: 8px;
+}
+/* Creating the lines in my wireframe that come before the eyebrow text using a CSS pseudo-element */
+.eyebrow::before {
+    content: '';
+    display: block;
+    width: 24px;
+    height: 1px;
+    background-color: #1B3A6B;
+    flex-shrink: 0;
+}
+/* Styling the main heading of each section */
+.section-heading {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.85em;
+    color: #1B3A6B;
+    margin-bottom: 16px;
+    line-height: 1.15;
+}
+ 
+/* Styling the introductory paragraph that appears below a section heading */
+.section-lead {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.95em;
+    color: #555555;
+    line-height: 1.7;
+    margin-bottom: 12px;
+    max-width: 760px;
+}
+/* Creating my article like cards that show semi brief points with headings */
+
+/* Why Liberia section */
+/* Setting the background and padding for the this section */
+.section-why {
+    background-color: #ffffff;
+    padding: 72px 40px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+/* Using flexbox to place the three cards side by side in a row */
+.cards-row {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    margin-top: 32px;
+    list-style: none;
+}
+ 
+/* Each card takes equal width using flex: 1 and stacks its contents as a column */
+.card {
+    flex: 1;
+    border: 1px solid #dddddd;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+}
+/* The gray header bar at the top of each article card matching my wireframe layout */
+.card-header {
+    background-color: #e8e8e8;
+    padding: 10px 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.82em;
+    font-weight: bold;
+    color: #444444;
+    border-bottom: 1px solid #dddddd;
+}
+
+/* The body area of each card */
+.card-body {
+    padding: 18px;
+    flex: 1;
+}
+
+/* Styling the small heading inside each card body */
+.card-title {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 0.95em;
+    color: #1B3A6B;
+    margin-bottom: 8px;
+}
+
+/* Styling the paragraph text inside each card body */
+.card-body p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.85em;
+    color: #666666;
+    line-height: 1.65;
+}
+/* Liberia: Resilience and Natural Beauty Section */
+
+/* Setting the background for this section */
+.section-split {
+    background-color: #F7F4EE;
+    padding: 72px 40px;
+}
+
+/* Using flexbox to place the image and text side by side */
+.split-layout {
+    display: flex;
+    flex-direction: row;
+    gap: 56px;
+    align-items: center;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+/* Setting the image column to always be 45% of the row width */
+.split-img-col {
+    flex: 0 0 45%;
+}
+/* Making the image fill the full width of its column */
+.split-img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+ 
+/* The text column takes all remaining space and stacks its contents as a column */
+.split-text-col {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+/* Styling the paragraphs inside the text column */
+.split-text-col p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.93em;
+    color: #555555;
+    line-height: 1.7;
+}
+
+/* Liberia's History Section */
+/* Setting the background for the history section */
+.section-history {
+    background-color: #ffffff;
+    padding: 72px 40px;
+}
+/* Overriding the vertical centering so both columns align to the top */
+.split-layout-start {
+    align-items: flex-start;
+}
+ 
+/* Making the image column slightly narrower to give more room to the timeline */
+.split-img-tall {
+    flex: 0 0 38%;
+}
+/* The timeline Section */
+/* Stacking all timeline rows in a column */
+.timeline {
+    list-style: none;
+    margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+}
+/* Each timeline row will be a flex row having the circle dot on the left and the text on the right */
+.timeline-item {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    padding-bottom: 26px;
+    position: relative;
+}
+/* Drawing the line that connects each dot using a pseudo-element to get the connection that i had in my wireframe*/
+.timeline-item:not(.timeline-item-last)::before {
+    content: '';
+    position: absolute;
+    left: 11px;
+    top: 24px;
+    bottom: 0;
+    width: 1px;
+    background-color: #C9A847;
+}
+ 
+/* Styling the circle dot on each timeline item */
+.timeline-dot {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    border: 2px solid #1B3A6B;
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+/* The text area to the right of each dot */
+.timeline-body {
+    flex: 1;
+}
+ 
+/* Styling the heading for each timeline event */
+.timeline-heading {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 0.92em;
+    font-weight: bold;
+    color: #1B3A6B;
+    margin-bottom: 6px;
+}
+ 
+/* Styling the description paragraph for each timeline event */
+.timeline-body p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.85em;
+    color: #666666;
+    line-height: 1.65;
+}
+/* The travel with purpose section */
+/* Setting the background and padding for this section */
+.section-purpose {
+    background-color: #F7F4EE;
+    padding: 72px 40px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+ 
+/* Styling the body paragraphs inside this section */
+.section-purpose p {
+    font-family: Arial, sans-serif;
+    font-size: 0.95em;
+    color: #555555;
+    line-height: 1.7;
+    margin-bottom: 12px;
+    max-width: 760px;
+}
+/* The bridge strip */
+/* Setting the background and border for this strip*/
+.bridge-strip {
+    background-color: #F7F4EE;
+    border-top: 1px solid #e0dbd0;
+    border-bottom: 1px solid #e0dbd0;
+    padding: 24px 0;
+}
+/* Using flexbox to put the text on the left and the button on the right */
+.bridge-inner {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+/* Stacking the heading and subtext as a column on the left side */
+.bridge-text {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+ 
+/* Styling the bold heading in the bridge strip */
+.bridge-text strong {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1em;
+    color: #1B3A6B;
+}
+ 
+/* Styling the smaller subtitle below the bridge heading */
+.bridge-text span {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.82em;
+    color: #888888;
+}
+/* The footer */
+/* Setting the footer background */
+.site-footer {
+    background-color: #1B3A6B;
+    padding: 28px 40px;
+    text-align: center;
+}
+ 
+/* Using flexbox to display footer links centered in a row */
+.footer-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 28px;
+    margin-bottom: 12px;
+    flex-wrap: wrap;
+}
+/* Styling each footer link */
+.footer-nav a {
+    color: #ffffffa6;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.82em;
+    text-decoration: none;
+}
+ 
+/* Changing footer links color when hovered */
+.footer-nav a:hover {
+    color: #C9A847;
+    text-decoration: none;
+}
+/* Styling the copyright line at the bottom of the footer */
+.footer-copy {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.8em;
+    color: rgba(255, 255, 255, 0.5);
+}
+ 
+/* Making the site name inside the copyright line have color */
+.footer-copy strong {
+    color: #C9A847;
+}
+/* Fixing my media query to allow my site be able to adjust for different screens and be responsive */
+/* For Large screens of 1200px and wider */
+@media (min-width: 1200px) {
+
+    /* Giving the hero more breathing room on large screens */
+    .hero {
+        padding: 80px 40px;
+    }
+
+    /* Making the hero heading larger on big screens */
+    .hero-heading {
+        font-size: 3em;
+    }
+
+    /* Giving section headings more presence on large screens */
+    .section-heading {
+        font-size: 2.1em;
+    }
+}
+/* For screens of 900px wide and smaller */
+@media (max-width: 900px) {
+
+    /* Making the hero heading smaller on screens of this size */
+    .hero-heading {
+        font-size: 2em;
+    }
+
+    /* Stacking the two-column image and text sections into one column */
+    .split-layout {
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    /* Making image columns go full width when stacked */
+    .split-img-col,
+    .split-img-tall {
+        flex: 0 0 100%;
+        width: 100%;
+    }
+
+    /* Allowing cards to wrap so two appear per row on screens of this size */
+    .cards-row {
+        flex-wrap: wrap;
+    }
+
+    /* Setting each card to take roughly half the row width on screens of this size */
+    .card {
+        flex: 1 1 calc(50% - 10px);
+    }
+}
+/* For mobile screens*/
+@media (max-width: 768px) {
+
+    /* Nav collapses to hamburger */
+    .nav-toggle {
+        display: flex;
+    }
+    /* Adjusting the nav bar height so it wraps correctly on mobile */
+    .nav-bar {
+        height: auto;
+        padding: 14px 20px;
+        flex-wrap: wrap;
+    }
+    /* Hiding all nav links by default on mobile until the hamburger is clicked */
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        gap: 0;
+        margin-top: 10px;
+        border-top: 1px solid rgba(255, 255, 255, 0.2);
+        padding-top: 8px;
+    }
+    /* toggleMenu() in the script adds this class to show the links */
+    .nav-links.nav-links-open {
+        display: flex;
+    }
+    /* Making each nav link fill the full width on mobile */
+    .nav-link {
+        width: 100%;
+        padding: 10px 16px;
+        border: none;
+        border-bottom: 1px solid #c9a84740;
+        background-color: #ffffff12;
+        color: #ffffff;
+        font-size: 0.88em;
+    }
+    /* Styling mobile nav links when hovered on or when that place is what is active and has been clciked on */
+    .nav-link:hover,
+    .nav-active {
+        background-color: #c9a84733;
+        color: #C9A847;
+    }
+
+    /* Reducing hero padding on mobile */
+    .hero {
+        padding: 32px 16px;
+        gap: 14px;
+    }
+    /* Making the hero heading smaller on mobile */
+    .hero-heading {
+        font-size: 1.4em;
+    }
+    /* Making the hero paragraph text slightly smaller on mobile */
+    .hero-sub {
+        font-size: 0.88em;
+    }
+    /* Reducing the hero image height on mobile */
+    .hero-img {
+        height: 200px;
+    }
+    /* Stacking the two hero buttons vertically on mobile */
+    .hero-btns {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    /* Giving each button a consistent width when stacked on mobile */
+    .hero-btns .btn {
+        width: 220px;
+        text-align: center;
+    }
+
+    /* Sections stack and reduce padding */
+    .section-why,
+    .section-split,
+    .section-history,
+    .section-purpose {
+        padding: 32px 16px;
+    }
+
+    .section-heading {
+        font-size: 1.4em;
+    }
+    /* Stacking cards into one column on mobile */
+    .cards-row {
+        flex-direction: column;
+        gap: 14px;
+    }
+    /* Each card takes full width on mobile */
+    .card {
+        flex: 1 1 100%;
+    }
+
+    /* Reducing marquee padding on mobile */
+    .marquee-strip {
+        padding: 10px 20px;
+    }
+    /* Allowing the marquee text to wrap on small screens */
+    .marquee-text {
+        white-space: normal;
+        line-height: 1.8;
+    }
+    /* Stacking the bridge strip text and button vertically on mobile */
+    .bridge-inner {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0 16px;
+        gap: 14px;
+    }
+    /* Reducing footer padding on mobile */
+    .site-footer {
+        padding: 24px 16px;
+    }
+    /* Reducing the gap between footer links on mobile */
+    .footer-nav {
+        gap: 16px;
+    }
+}
