@@ -233,14 +233,14 @@ figcaption {
     text-decoration: none;
 }
 /* Styling and setting up the marquee bar */
-/* Setting the dark red background for the marquee strip */
+/* Setting the background for the marquee strip */
 .marquee-strip {
     background-color: #8B1A1A;
     padding: 10px 40px;
     overflow: hidden;
 }
 
-/* Keeping the marquee text on one line so it does not wrap */
+/* Making the marquee text animate left using @keyframes so it actually scrolls */
 .marquee-text {
     color: #ffffffe0;
     font-family: Arial, Helvetica, sans-serif;
@@ -248,7 +248,27 @@ figcaption {
     font-style: italic;
     white-space: nowrap;
     letter-spacing: 0.5px;
+    /*Applying the scrolling animation*/
+    display: inline-block;
+    animation: marquee-scroll 30s linear infinite;
 }
+
+/* Pausing the animation when the user hovers over the strip */
+.marquee-strip:hover .marquee-text {
+    animation-play-state: paused;
+}
+
+/* I learned how to do the Keyframes animation from w3schools to allow it scroll */
+@keyframes marquee-scroll {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+ 
+
 /* Section Heading Stylings*/
 /* Styling the small uppercase label that appears above each section heading */
 .eyebrow {
