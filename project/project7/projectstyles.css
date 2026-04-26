@@ -877,6 +877,7 @@ figcaption {
     padding: 10px 14px;
     border-bottom: 1px solid #eeeeee;
     color: #555555;
+    word-break: break-word;
 }
 /* Removing the border from the last row */
 .data-table tr:last-child td {
