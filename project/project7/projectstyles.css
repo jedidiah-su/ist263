@@ -1414,7 +1414,7 @@ figcaption {
         height: 100px;
     }
     .practical-layout {
-        flex-direction: column;
+        overflow: hidden;
     }
     .practical-img-stack {
         flex-direction: column;
@@ -1423,9 +1423,15 @@ figcaption {
         height: 160px;
     }
     .tab-btn {
-        padding: 8px 12px;
+        flex:1;
+        padding: 8px 10px;
         font-size: 0.78em;
+        text-align: center;
+    }/* Allowing the tab nav to wrap if buttons are too wide */
+    .tab-nav {
+        flex-wrap: wrap;
     }
+
     .season-btn {
         flex: 1;
         padding: 10px 12px;
