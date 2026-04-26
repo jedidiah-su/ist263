@@ -7,138 +7,161 @@
     <link rel="stylesheet" href="projectstyles.css">
     <link rel="shortcut icon" type="image/x-icon" href="../webmedia/favicon.ico">
     <meta name="description" content="Explore Liberia's key destinations, culture, language, etiquette and coastlines.">
-    
-    
 </head>
 <body>
  
-    <header>
-        <nav>
-            <a href="index.html">Home</a> <span>|</span>
-            <a href="culture.html">Culture, Coastlines &amp; Community</a> <span>|</span>
-            <a href="handbook.html">The Liberia Handbook</a> <span>|</span>
-            <a href="handbook.html">Plan Your Trip</a>
-        <!-- Hamburger button which shows on smaller screens and get hidden on bigger screens, the function gets called when clicked -->
+    <header class="site-header">
+        <nav class="nav-bar">
+            <a href="index.html" class="nav-brand">Discover West Africa</a>
+           <!-- Hamburger button which shows on smaller screens and get hidden on bigger screens, the function gets called when clicked -->
             <button class="nav-toggle" onclick="toggleMenu()">
                 <span class="hamburger-line"></span>
                 <span class="hamburger-line"></span>
                 <span class="hamburger-line"></span>
             </button>
+ 
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html" class="nav-link nav-active">Home</a></li>
+                <li><a href="culture.html" class="nav-link">Culture, Coastlines &amp; Community</a></li>
+                <li><a href="handbook.html" class="nav-link">The Liberia Handbook</a></li>
+                <li><a href="handbook.html" class="nav-link">Plan Your Trip</a></li>
+            </ul>
         </nav>
     </header>
  
     <main>
- 
-        <section>
-            <h1>Discover Liberia: Culture, Coastlines, and Community</h1>
-            <figure>
-                <img src="../webmedia/canoeonsea.jpg" alt="a canoe-traditional boat on sea">
+        <!-- Page Banner -->
+        <section class="page-banner">
+            <h1 class="banner-heading">Discover Liberia: Culture, Coastlines, and Community</h1>
+            <figure class="banner-figure">
+                <img class="banner-img" src="../webmedia/canoeonsea.jpg" alt="a canoe-traditional boat on sea">
                 <figcaption>People, destinations, language and the spirit of Liberia</figcaption>
             </figure>
         </section>
  
         <!-- About Liberia Intro -->
-        <section>
-            <h2>About Liberia</h2>
+        <section class="section-intro">
+            <h2 class="section-heading">About Liberia</h2>
             <p>Liberia stands apart in African history. Officially proclaimed as an independent nation in 1847 by freed American slaves, Liberia existed far before then with its indigenous people. It's Africa's oldest republic and a nation defined by resilience.</p>
-            <p>Despite challenges including civil wars that ended in 2003, Liberia is rebuilding with determination and welcoming visitors to experience its crystal coastline, warm hospitality, and unique cultural heritage. Infrastructure is still developing, and travel requires flexibility. But that's exactly what makes Liberia special — experiences are authentic, and connections with locals are genuine.</p>
+            <p>Despite challenges including civil wars that ended in 2003, Liberia is rebuilding with determination and welcoming visitors to experience its crystal coastline, warm hospitality, and unique cultural heritage. Infrastructure is still developing, and travel requires flexibility, but that's exactly what makes Liberia special. Experiences are authentic, and connections with locals are genuine.</p>
         </section>
  
         <!-- Culture, Community and Hospitality — 3 Cards -->
-        <section>
-            <h2>Culture, Community &amp; Hospitality</h2>
-            <p>Liberia has a small population of about 5 million and its size makes genuine connection possible. Liberians are generally warm and curious about visitors, especially those showing genuine interest in their culture.</p>
-            <ul>
-                <li>
-                    <h3>Language &amp; Phrases</h3>
-                    <p>English is Liberia's official language. However, Liberian English ("Kolokwa") has distinctive pronunciation and vocabulary that takes a little adjustment. Kpelle is the most widely spoken indigenous language, followed by Bassa, with Gio, Mano, Grebo, Kru, Gola, Kissi, and Vai spoken regionally. Learning even one local greeting goes a long way. For a full list of useful Liberian phrases with meanings, see <a href="handbook.html#language">Language &amp; Phrases in The Liberia Handbook</a>.</p>
+        <section class="section-culture-cards">
+            <p class="eyebrow eyebrow-light">The People</p>
+            <h2 class="section-heading section-heading-light">Culture, Community &amp; Hospitality</h2>
+            <p class="section-lead section-lead-light">Liberia has a  population of about 5 million and its size makes genuine connection possible. Liberians are generally warm and curious about visitors, especially those showing genuine interest in their culture.</p>
+            <ul class="cards-row">
+                <li class="card card-dark">
+                    <div class="card-header card-header-dark">Language &amp; Phrases</div>
+                    <div class="card-body">
+                        <h3 class="card-title card-title-light">Kolokwa</h3>
+                    <p class="card-text-light">English is Liberia's official language. However, Liberian English ("Kolokwa") has distinctive pronunciation and vocabulary that takes a little adjustment. Kpelle is the most widely spoken indigenous language, followed by Bassa, with Gio, Mano, Grebo, Kru, Gola, Kissi, and Vai spoken regionally. Learning even one local greeting goes a long way. For a full list of useful Liberian phrases with meanings, see <a href="handbook.html#language" class="link-light">Language &amp; Phrases in The Liberia Handbook</a>.</p>
+                    </div>
                 </li>
-                <li>
-                    <h3>Community &amp; Hospitality</h3>
-                    <p>Liberian culture places high value on community, relationships, and interpersonal connection. Don't be surprised if someone invites you to their home or offers to share food — this generosity is genuine, not transactional. Liberians take pride in welcoming visitors. Consider visiting through organizations working on education, agriculture, or community development for deep immersion. For solo travel, local guides <strong>Lauretta Cisse</strong> and <strong>Tuzee Toure</strong> offer structured, meaningful experiences.</p>
+                <li class="card card-dark">
+                    <div class="card-header card-header-dark">Community &amp; Hospitality</div>
+                    <div class="card-body">
+                        <h3 class="card-title card-title-light">Genuine Connection</h3>
+                    <p class="card-text-light">Liberian culture places high value on community, relationships, and interpersonal connection. Don't be surprised if someone invites you to their home or offers to share food — this generosity is genuine, not transactional. Liberians take pride in welcoming visitors. Consider visiting through organizations working on education, agriculture, or community development for deep immersion. For solo travel, local guides <strong>Lauretta Cisse</strong> and <strong>Tuzee Toure</strong> offer structured, meaningful experiences.</p>
+                    </div>
                 </li>
-                <li>
-                    <h3>Religion &amp; Identity</h3>
-                    <p>Religious tolerance is generally strong in Liberia. The population is dominantly Christian with Islam as the next most common religion. The dual identity — Americo-Liberian heritage meeting deep indigenous culture — makes Liberia's social fabric uniquely layered and fascinating.</p>
+                <li class="card card-dark">
+                    <div class="card-header card-header-dark">Religion &amp; Identity</div>
+                    <div class="card-body">
+                        <h3 class="card-title card-title-light">Layered Heritage</h3>
+                    <p class="card-text-light">Religious tolerance is generally strong in Liberia. The population is dominantly Christian with Islam as the next most common religion. The dual identity — Americo-Liberian heritage meeting deep indigenous culture — makes Liberia's social fabric uniquely layered and fascinating.</p>
+                    </div>
                 </li>
             </ul>
         </section>
  
     
-        <section>
-            <h2>The Etiquettes</h2>
-            <figure>
-                <img src="../webmedia/DJI_20250723135838_0092_D.JPGDJI_20250723135838_0092_D.JPG" alt="Liberian community members greeting each other">
-                <figcaption>Greetings and respect are central to Liberian daily life and culture</figcaption>
+        <section class="section-etiquette">
+            <div class="etiq-layout">
+                <!-- Left sticky column -->
+                <div class="etiq-sidebar">
+                    <p class="eyebrow">Respect &amp; Culture</p>
+            <h2 class="section-heading">The Etiquettes</h2>
+            <p class="section-lead">A few cultural norms to know before you go. Observing these builds instant trust and genuine goodwill with most Liberians you meet.</p>
+            <figure class="etiq-figure">
+                <img class="etiq-image" src="../webmedia/DJI_20250723135838_0092_D.JPGDJI_20250723135838_0092_D.JPG" alt="Liberian community members greeting each other">
+                <figcaption>Greetings and respect are central to Liberian daily life and culture -Picture: Rami Ramitto</figcaption>
             </figure>
-            <p>A few cultural norms to know before you go. Observing these builds instant trust and genuine goodwill with most Liberians you meet.</p>
-            <article>
-                <h3>Greetings Are Essential</h3>
+            </div>
+            
+            <!-- Right list of etiquette items-->
+                <div class="etiq-list">
+                    <article class="etiq-item">
+                <h3 class="etiq-heading">Greetings Are Essential</h3>
                 <p>Always greet people before starting conversation or asking questions. Handshakes are common. You'll see the "snap" handshake — when hands separate, there's a finger snap. It's distinctly Liberian and fun once you get it.</p>
-            </article>
-            <article>
-                <h3>Respect for Elders</h3>
+                </article>
+            <article class="etiq-item">
+                <h3 class="etiq-heading">Respect for Elders</h3>
                 <p>Age commands respect — common across West Africa. Greet older people first, use respectful titles, and listen when elders speak. This hierarchy is important to observe.</p>
             </article>
-            <article>
-                <h3>Use Your Right Hand</h3>
+            <article class="etiq-item">
+                <h3 class="etiq-heading">Use Your Right Hand</h3>
                 <p>The right hand is for giving, receiving, and eating. The left hand is considered unclean. If you're left-handed, try to use your right hand for all interactions with locals.</p>
             </article>
-            <article>
-                <h3>Photography Manners</h3>
+            <article class="etiq-item">
+                <h3 class="etiq-heading">Photography Manners</h3>
                 <p>Always ask permission before photographing people. Many will happily pose, but some may request money. Be particularly respectful in markets and at cultural sites.</p>
             </article>
-            <article>
-                <h3>Liberian Time</h3>
+            <article class="etiq-item etiq-item-last">
+                <h3 class="etiq-heading">Liberian Time</h3>
                 <p>Events might not start when scheduled — this isn't disrespect, it's a cultural difference in time perception. Practice patience and flexibility. Build extra time into your schedule.</p>
             </article>
+            </div>
+         </div>   
         </section>
  
         <!-- Key Destinations -->
-        <section>
-            <h2>Key Destinations in Liberia</h2>
+        <section class="section-destinations">
+            <p class="eyebrow">Destinations</p>
+            <h2 class="section-heading">Key Destinations in Liberia</h2>
  
-            <article id="monrovia">
-                <h3>Monrovia: The Capital City</h3>
+            <article class="destination-item" id="monrovia">
+                <h3 class="destination-heading">Monrovia: The "Commercial" Capital City</h3>
             
-                <p>Monrovia is at the heart of Liberia — the largest city and capital. It reflects both the nation's complex past and its contemporary energy. It bustles with food spots, shops to purchase local artwork at different art markets and offers a direct immersion into the everyday city lifestyle in Liberia.</p>
+                <p>Monrovia is at the heart of Liberia — the largest city and commercial capital. It reflects both the nation's complex past and its contemporary energy. It bustles with food spots, shops to purchase local artwork at different art markets and offers a direct immersion into the everyday city lifestyle in Liberia.</p>
             </article>
  
-            <article id="providence-island">
-                <h3>Providence Island: The Story Begins</h3>
+            <article class="destination-item" id="providence-island">
+                <h3 class="destination-heading">Providence Island: The Story Begins</h3>
                 
-                <p>On January 7, 1822, freed American slaves landed on this small island in the Mesurado River. Today, monuments mark this historic arrival. You can reach the island by boat from Waterside or by road via the St. Paul bridge.</p>
+                <p>On January 7, 1822, freed American slaves landed on this small island in the Mesurado River. Today, monuments mark this historic arrival. You can reach the island by boat from Waterside or by road via the St. Paul bridge which is the most poular used option.</p>
                 <p>Standing here connects you to the founding of Africa's first independent republic — Liberia served as the dream of return, and the reality of building something new.</p>
             </article>
  
-            <article id="waterside-market">
-                <h3>Waterside Market</h3>
+            <article class="destination-item" id="waterside-market">
+                <h3 class="destination-heading">Waterside Market</h3>
                 <figure>
-                    <img src="../webmedia/westpointsunset.jpg" alt="Westpoint sunset ">
-                    <figcaption>Westpoint Sunset near waterside-market</figcaption>
+                    <img class="destination-img" src="../webmedia/westpointsunset.jpg" alt="Westpoint sunset ">
+                    <figcaption>Westpoint Sunset near waterside-market Piture: Rami Ramitto</figcaption>
                 </figure>
                 <p>One of Monrovia's largest markets runs along Bushrod Island near the port. The energy here is intense — vendors selling fresh fish, produce, textiles, household goods, and everything Liberians need for daily life.</p>
                 <p>Expect crowds, noise, and the smell of smoked fish. Keep belongings secure and consider going with a local guide as it can get very confusing due to how busy it is.</p>
             </article>
  
-            <article id="national-museum">
-                <h3>National Museum</h3>
+            <article class="destination-item" id="national-museum">
+                <h3 class="destination-heading">National Museum</h3>
                 
                 <p>Located near the University of Liberia campus, this museum houses artifacts from indigenous Liberian cultures including traditional masks, instruments, and tools from groups like the Kpelle, Bassa, Gio, Mano, and Grebo who lived here long before the arrival of freed American slaves.</p>
                 <p>It provides valuable context for understanding Liberia's diverse cultural heritage beyond just the Americo-Liberian founding story.</p>
             </article>
  
-            <article id="mount-nimba">
-                <h3>Mount Nimba</h3>
+            <article class="destination-item" id="mount-nimba">
+                <h3 class="destination-heading">Mount Nimba</h3>
                 <figure>
-                    <img src="../webmedia/mountnimba.jpg" alt="Mountain Nimba in Nimba County ">
-                    <figcaption>Mount Nimba — about 5 hours from Monrovia, perfect for hikers with a famous ecolodge in the heart of the mountains</figcaption>
+                    <img class="destination-img"  src="../webmedia/mountnimba.jpg" alt="Mountain Nimba in Nimba County ">
+                    <figcaption>Mount Nimba — about 5 hours from Monrovia, perfect for hikers with a famous ecolodge in the heart of the mountains Picture: Rami Ramitto</figcaption>
                 </figure>
                 <p>In Nimba County about 5 hours away from the city — if you are a lover of hikes and love the scenic route, this is for you. The surrounding ecolodge lets you get fully immersed in nature by spending the night right in the heart of the mountains.</p>
             </article>
  
-            <article id="sapo-national-park">
-                <h3>Sapo National Park</h3>
+            <article class="destination-item" id="sapo-national-park">
+                <h3 class="destination-heading">Sapo National Park</h3>
                 
                 <p>Located in Sinoe County about 7 hours from Monrovia. Sapo protects West Africa's largest remaining tropical rainforest. Home to endangered species including:</p>
                 <ul>
@@ -153,21 +176,28 @@
         </section>
  
         <!-- Coastlines Gallery -->
-        <section id="coastlines">
-            <h2>The Coastlines</h2>
-            <p>Liberia boasts one of the finest coastlines in Africa. From beautiful beaches near Monrovia to the world-class surf of Robertsport, the Atlantic coast is a must-visit.</p>
+        <section class="section-coastlines" id="coastlines">
+            <p class="eyebrow">Natural Beauty</p>
+            <h2 class="section-heading">The Coastlines</h2>
+            <p>Liberia boasts of one of the finest coastlines in Africa. From beautiful beaches near Monrovia to the world-class surf of Robertsport, the Atlantic coast is a must-visit.</p>
  
-            <figure>
-                <img src="../webmedia/crystalbluewater.jpeg" alt="the Atlantic coastline">
-                <figcaption>Beaches Near Monrovia — white sand, palm trees, fresh seafood, and local culture</figcaption>
-            </figure>
-            <figure>
-                <img src="../webmedia/robertsportwave.jpg" alt="waves at Robertsport in Grand Cape Mount County">
-                <figcaption>Robertsport — West Africa's premier surf destination, 2–3 hours from Monrovia</figcaption>
-            </figure> 
+            <div class="gallery-row">
+                <figure class="gallery-item">
+                    <img class="gallery-img" src="../webmedia/crystalbluewater.jpeg" alt="the Atlantic coastline">
+                    <figcaption>Beaches Near Monrovia — white sand, palm trees, fresh seafood, and local culture. Picture: Rami Ramitto</figcaption>
+                </figure>
+                <figure class="gallery-item">
+                    <img class="gallery-img" src="../webmedia/robertsportwave.jpg" alt="waves at Robertsport in Grand Cape Mount County">
+                    <figcaption>Robertsport — West Africa's premier surf destination, 2–3 hours from Monrovia Picture: Rami Ramitto</figcaption>
+                </figure>
+                <figure class="gallery-item">
+                    <img class="gallery-img" src="../webmedia/canoeonsea.jpg" alt="traditional canoe on the Liberian sea">
+                    <figcaption>Coastal Life — fishing communities that have relied on the ocean for generations Picture: Rami Ramitto</figcaption>
+                </figure>
+            </div> 
  
-            <h3>Popular Beaches Near Monrovia</h3>
-            <table>
+            <h3 class="sub-heading">Popular Beaches Near Monrovia</h3>
+            <table class="data-table">
                 <caption>Popular beaches with distances and highlights</caption>
                 <thead>
                     <tr>
@@ -205,31 +235,35 @@
                 </tbody>
             </table>
  
-            <h3>Other Coastal Towns</h3>
-            <dl>
+            <h3 class="sub-heading">Other Coastal Towns</h3>
+            <dl class="coastal-towns">
                 <dt><strong>Buchanan</strong> — Grand Bassa County (about 2 hours)</dt>
                 <dd>Historical significance as a major port. Direct access to fresh seafood and fishing communities.</dd>
                 <dt><strong>Harper</strong> — Maryland County (near the Ivorian border)</dt>
-                <dd>Accessible by road or local air taxi arranged through tour guides. Offers beaches and the historic William Tubman mansion.</dd>
+                <dd>Accessible by road (which is much longer) or local air taxi arranged through tour guides. Offers beaches and the historic William Tubman mansion.</dd>
             </dl>
         </section>
- 
-    
-        <section>
-            <h2>Ready for Food and Practical Tips?</h2>
-            <p>Food &amp; dining, money, safety, transport and the best time to visit.</p>
-            <p><a href="handbook.html">The Liberia Handbook &rarr;</a></p>
-        </section>
+
+        <div class="bridge-strip">
+            <div class="bridge-inner">
+                <div class="bridge-text">
+                    <strong>Ready for Food and Practical Tips?</strong>
+                    <span>Food &amp; dining, money, safety, transport and the best time to visit.</span>
+                </div>
+            <a href="handbook.html" class="btn btn-gold">The Liberia Handbook &rarr;</a>
+            </div>
+            </div>
+       
  
     </main>
  
-    <footer>
-        <nav>
-            <a href="index.html">Home</a> |
-            <a href="culture.html">Culture, Coastlines &amp; Community</a> |
+    <footer class="site-footer">
+        <nav class="footer-nav">
+            <a href="index.html">Home</a> 
+            <a href="culture.html">Culture, Coastlines &amp; Community</a> 
             <a href="handbook.html">The Liberia Handbook</a>
         </nav>
-        <p>&copy; Discover Liberia &mdash; West Africa Travel Guide</p>
+        <p class="footer-copy">&copy; <strong>Discover Liberia</strong> &mdash; West Africa Travel Guide</p>
     </footer>
 
 <!-- JavaScript for the mobile hamburger menu toggle -->
