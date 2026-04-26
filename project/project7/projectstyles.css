@@ -293,6 +293,13 @@ figcaption {
     background-color: #1B3A6B;
     flex-shrink: 0;
 }
+/* Light version of the eyebrow used on dark background sections */
+.eyebrow-light {
+    color: #c9a847d9;
+}
+.eyebrow-light::before {
+    background-color: #c9a847d9;
+}
 /* Styling the main heading of each section */
 .section-heading {
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -301,7 +308,24 @@ figcaption {
     margin-bottom: 16px;
     line-height: 1.15;
 }
- 
+/* Light version of the section heading used on dark backgrounds */
+.section-heading-light {
+    color: #ffffff;
+}
+
+/* Light version of the section lead used on dark backgrounds */
+.section-lead-light {
+    color: #ffffffbf;
+}
+/* Styling smaller sub-headings used within sections */
+.sub-heading {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.1em;
+    color: #1B3A6B;
+    margin-top: 28px;
+    margin-bottom: 14px;
+}
+
 /* Styling the introductory paragraph that appears below a section heading */
 .section-lead {
     font-family: Arial, Helvetica, sans-serif;
@@ -311,6 +335,78 @@ figcaption {
     margin-bottom: 12px;
     max-width: 760px;
 }
+
+/* The page banner for the culture and handbook page */
+/* Setting up the banner as a relative container so the heading can sit over the image */
+.page-banner {
+    background-color: #1B3A6B;
+    padding: 40px 40px 0 40px;
+    text-align: center;
+}
+/* Styling the main page heading inside the banner */
+.banner-heading {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 2em;
+    color: #ffffff;
+    line-height: 1.15;
+    margin-bottom: 12px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* Styling the optional subtitle line in the banner */
+.banner-sub {
+    color: #ffffffbf;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.95em;
+    margin-bottom: 20px;
+}
+/* Containing the banner image below the heading */
+.banner-figure {
+    width: 100%;
+    margin: 0;
+}
+/* Making the banner image full width with a fixed height */
+.banner-img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    display: block;
+    opacity: 0.65;
+}
+
+/* The shared section */
+/* White background section */
+.section-intro {
+    background-color: #ffffff;
+    padding: 72px 40px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+/* Styling the paragraphs inside white sections */
+.section-intro p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.95em;
+    color: #555555;
+    line-height: 1.7;
+    margin-bottom: 12px;
+}
+/* Warm off-white background section for alternating rows */
+.section-alt {
+    background-color: #F7F4EE;
+    padding: 72px 40px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+/* Styling the paragraphs inside warm sections */
+.section-alt p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.95em;
+    color: #555555;
+    line-height: 1.7;
+    margin-bottom: 12px;
+}
+
 /* Creating my article like cards that show semi brief points with headings */
 
 /* Why Liberia section */
