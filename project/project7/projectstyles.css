@@ -1214,6 +1214,26 @@ figcaption {
     .support-card {
         flex: 1 1 calc(50% - 10px);
     }
+    .food-mosaic {
+        flex-direction: column;
+    }
+    .food-mosaic-main {
+        flex: 0 0 auto;
+    }
+    .food-mosaic-img-main {
+        height: 260px;
+    }
+    .practical-layout {
+        flex-direction: column;
+    }
+    .practical-img-stack {
+        flex: 0 0 auto;
+        flex-direction: row;
+    }
+    .practical-img {
+        height: 120px;
+    }
+
 }
 /* For mobile screens*/
 @media (max-width: 768px) {
@@ -1383,6 +1403,32 @@ figcaption {
     .footer-nav {
         gap: 16px;
     }
+    .food-mosaic {
+        flex-direction: column;
+    }
+    .food-mosaic-img-main {
+        height: 220px;
+    }
+    .food-mosaic-img-small {
+        height: 100px;
+    }
+    .practical-layout {
+        flex-direction: column;
+    }
+    .practical-img-stack {
+        flex-direction: column;
+    }
+    .practical-img {
+        height: 160px;
+    }
+    .tab-btn {
+        padding: 8px 12px;
+        font-size: 0.78em;
+    }
+    .season-btn {
+        flex: 1;
+        padding: 10px 12px;
+    }
 }
 /* styling the banner label */
 /* Styling the small category label at the top of the banner */
@@ -1394,4 +1440,170 @@ figcaption {
     text-transform: uppercase;
     color: #c9a847d9;
     margin-bottom: 8px;
+}
+/* styling food sections layout */
+/* Flex row: large image left takes 45%, 2x2 grid right takes rest */
+.food-mosaic {
+    display: flex;
+    flex-direction: row;
+    gap: 14px;
+    margin: 24px 0 32px 0;
+    align-items: stretch;
+}
+/* Left column — large featured image */
+.food-mosaic-main {
+    flex: 0 0 45%;
+    margin: 0;
+}
+/* Making the main featured image fill the full height of the mosaic */
+.food-mosaic-img-main {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+/* Right column — 2x2 grid of four smaller images */
+.food-mosaic-grid {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+/* Each smaller image takes half the grid width */
+.food-mosaic-item {
+    flex: 1 1 calc(50% - 5px);
+    margin: 0;
+}
+/* Styling each small grid image with a fixed height */
+.food-mosaic-img-small {
+    width: 100%;
+    height: 130px;
+    object-fit: cover;
+    display: block;
+}
+/* Prcatical infor section on handbook page */
+/* Flex row: image stack left, tabs right */
+.practical-layout {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    align-items: flex-start;
+    margin-top: 24px;
+}
+/* Left column with two stacked images */
+.practical-img-stack {
+    flex: 0 0 38%;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+/* Styling each image in the stack */
+.practical-img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    display: block;
+}
+/* Right column containing the tab buttons and content */
+.practical-tabs {
+    flex: 1;
+}
+/* Row of tab buttons across the top of the panel */
+.tab-nav {
+    display: flex;
+    flex-direction: row;
+    border-bottom: 2px solid #e0dbd0;
+    margin-bottom: 20px;
+}
+/* Styling each tab button */
+.tab-btn {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.85em;
+    font-weight: bold;
+    color: #888888;
+    background: none;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+    margin-bottom: -2px;
+    transition: color 0.2s ease;
+}
+.tab-btn:hover {
+    color: #1B3A6B;
+}
+/* Active tab button gets a navy underline and navy text */
+.tab-active {
+    color: #1B3A6B;
+    border-bottom: 2px solid #1B3A6B;
+}
+/* The content area inside each tab panel */
+.tab-content p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.92em;
+    color: #555555;
+    line-height: 1.7;
+    margin-bottom: 12px;
+}
+/* Styling the heading inside each tab content panel */
+.tab-heading {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.05em;
+    color: #1B3A6B;
+    margin-bottom: 12px;
+}
+/* the season toggle styling */
+/* Container for the toggle section */
+.season-toggle {
+    margin-top: 24px;
+}
+/* Row of two toggle buttons matching wireframe */
+.season-btns {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 0;
+}
+/* Styling each season toggle button */
+.season-btn {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.85em;
+    font-weight: bold;
+    padding: 10px 28px;
+    border: 1.5px solid #dddddd;
+    background-color: #f5f5f5;
+    color: #888888;
+    cursor: pointer;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+/* Active season button gets navy background and white text matching wireframe */
+.season-btn-active {
+    background-color: #1B3A6B;
+    color: #ffffff;
+    border-color: #1B3A6B;
+}
+.season-btn:hover:not(.season-btn-active) {
+    background-color: #eeeeee;
+    color: #444444;
+}
+/* The info box that appears below the toggle buttons */
+.season-info {
+    border: 1.5px solid #dddddd;
+    border-top: none;
+    padding: 24px;
+    background-color: #ffffff;
+}
+/* Styling the heading inside the season info box */
+.season-info-heading {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1em;
+    color: #1B3A6B;
+    margin-bottom: 12px;
+}
+/* Styling the paragraph inside the season info box */
+.season-info p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.92em;
+    color: #555555;
+    line-height: 1.7;
 }
