@@ -453,6 +453,12 @@ figcaption {
     color: #444444;
     border-bottom: 1px solid #dddddd;
 }
+/* Dark version of the card header used on dark background sections */
+.card-header-dark {
+    background-color: #ffffff1f;
+    color: #ffffffd9;
+    border-bottom: 1px solid #ffffff1a;
+}
 
 /* The body area of each card */
 .card-body {
@@ -468,6 +474,11 @@ figcaption {
     margin-bottom: 8px;
 }
 
+/* Light version of the card title for dark background sections */
+.card-title-light {
+    color: #ffffff;
+}
+
 /* Styling the paragraph text inside each card body */
 .card-body p {
     font-family: Arial, Helvetica, sans-serif;
@@ -475,6 +486,29 @@ figcaption {
     color: #666666;
     line-height: 1.65;
 }
+
+/* Light version of card body text for dark background sections */
+.card-text-light {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.85em;
+    color: #ffffffa6;
+    line-height: 1.65;
+}
+
+/* Dark card background used in culture card section */
+.card-dark {
+    background-color: #ffffff0f;
+    border-color: #ffffff1a;
+}
+/* Light link color for links inside dark card sections */
+.link-light {
+    color: #C9A847;
+}
+.link-light:hover {
+    color: #ffffff;
+}
+
+
 /* Liberia: Resilience and Natural Beauty Section */
 
 /* Setting the background for this section */
@@ -648,6 +682,421 @@ figcaption {
     font-size: 0.82em;
     color: #888888;
 }
+
+/* The culture card section */
+/* Setting the dark background for the culture cards section */
+.section-culture-cards {
+    background-color: #1C3327;
+    padding: 72px 40px;
+    max-width: 100%;
+}
+/* Limiting the inner content width on the dark section */
+.section-culture-cards .cards-row {
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* The etiquette section */
+/* Setting the background for the etiquette section */
+.section-etiquette {
+    background-color: #ffffff;
+    padding: 72px 40px;
+}
+/* Using flexbox to create the sidebar layout — left col and right col */
+.etiq-layout {
+    display: flex;
+    flex-direction: row;
+    gap: 56px;
+    align-items: flex-start;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+/* Left column takes 32% of the width */
+.etiq-sidebar {
+    flex: 0 0 32%;
+}
+/* Making the sidebar image fill the column width */
+.etiq-figure {
+    margin-top: 20px;
+}
+.etiq-img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+/* Right column takes the remaining space */
+.etiq-list {
+    flex: 1;
+}
+/* Styling each etiquette item row with a bottom border as a divider */
+.etiq-item {
+    padding: 16px 0;
+    border-bottom: 1px solid #F0EBE4;
+}
+/* Removing the border from the last item */
+.etiq-item-last {
+    border-bottom: none;
+}
+/* Styling the heading inside each etiquette item */
+.etiq-heading {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 0.95em;
+    font-weight: bold;
+    color: #1B3A6B;
+    margin-bottom: 6px;
+}
+/* Styling the paragraph inside each etiquette item */
+.etiq-item p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.88em;
+    color: #666666;
+    line-height: 1.65;
+}
+
+/* The destination section */
+/* Setting the warm background for the destinations section */
+.section-destinations {
+    background-color: #F7F4EE;
+    padding: 72px 40px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+/* Styling each individual destination article */
+.destination-item {
+    padding-bottom: 36px;
+    margin-bottom: 36px;
+    border-bottom: 1px solid #e0dbd0;
+}
+/* Removing the bottom border from the last destination */
+.destination-item:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+/* Styling the destination heading */
+.destination-heading {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.1em;
+    color: #1B3A6B;
+    margin-bottom: 10px;
+}
+/* Styling destination images */
+.destination-img {
+    width: 100%;
+    max-height: 280px;
+    object-fit: cover;
+    margin-bottom: 14px;
+}
+/* Styling destination paragraphs */
+.destination-item p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.93em;
+    color: #555555;
+    line-height: 1.7;
+    margin-bottom: 10px;
+}
+/* Styling the wildlife bullet list inside Sapo National Park */
+.wildlife-list {
+    list-style: disc;
+    padding-left: 22px;
+    margin: 10px 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.9em;
+    color: #555555;
+}
+.wildlife-list li {
+    padding: 3px 0;
+}
+
+/* The coastline gallery */
+/* Setting the white background for the coastlines section */
+.section-coastlines {
+    background-color: #ffffff;
+    padding: 72px 40px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+/* Using flexbox to display three gallery images in a row */
+.gallery-row {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    margin-top: 22px;
+    margin-bottom: 32px;
+    flex-wrap: wrap;
+}
+/* Each gallery item takes equal width */
+.gallery-item {
+    flex: 1;
+    min-width: 200px;
+    margin: 0;
+}
+/* Making gallery images fill their column and crop to the same height */
+.gallery-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+    /* Smooth zoom effect on hover using transition */
+    transition: transform 0.3s ease;
+}
+/* Slightly zooming in gallery images when hovered */
+.gallery-img:hover {
+    transform: scale(1.03);
+}
+ 
+/* The table with phrase and stuff */
+/* Styling the table for beaches and phrases */
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 16px 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.88em;
+}
+/* Styling the table caption */
+.data-table caption {
+    font-size: 0.78em;
+    color: #888888;
+    font-style: italic;
+    margin-bottom: 8px;
+    text-align: left;
+}
+/* Styling the table header cells */
+.data-table th {
+    background-color: #1B3A6B;
+    color: #ffffff;
+    padding: 10px 14px;
+    text-align: left;
+    font-size: 0.82em;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+/* Styling the table data cells */
+.data-table td {
+    padding: 10px 14px;
+    border-bottom: 1px solid #eeeeee;
+    color: #555555;
+}
+/* Removing the border from the last row */
+.data-table tr:last-child td {
+    border-bottom: none;
+}
+/* Adding a subtle background on alternating rows for readability */
+.data-table tbody tr:nth-child(even) {
+    background-color: #F7F4EE;
+}
+
+/* Coastal town list */
+/* Styling the list for coastal towns */
+.coastal-towns {
+    margin: 16px 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* Styling beach name in the list */
+.coastal-towns dt {
+    font-size: 0.92em;
+    font-weight: bold;
+    color: #1B3A6B;
+    margin-top: 14px;
+}
+/* Styling the description in the  list */
+.coastal-towns dd {
+    font-size: 0.88em;
+    color: #666666;
+    padding-left: 16px;
+    line-height: 1.65;
+    margin-top: 3px;
+}
+/* The handbook inpage navigation to allow users skip to specific sections */
+/* Setting the background for the in-page navigation strip */
+.handbook-nav {
+    background-color: #F7F4EE;
+    border-bottom: 1px solid #e0dbd0;
+    padding: 18px 40px;
+    max-width: 100%;
+}
+/* Styling the small heading above the nav links */
+.handbook-nav-heading {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.68em;
+    font-weight: bold;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #aaaaaa;
+    margin-bottom: 10px;
+}
+/* Using flexbox to display all jump links in a row that wraps */
+.handbook-nav-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 8px 20px;
+    list-style: none;
+}
+/* Styling each jump link */
+.handbook-nav-link {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.85em;
+    color: #BF2B2B;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+.handbook-nav-link:hover {
+    color: #1B3A6B;
+    text-decoration: underline;
+}
+
+/* Food articles */
+/* Styling each food article entry */
+.food-item {
+    padding-bottom: 28px;
+    margin-bottom: 28px;
+    border-bottom: 1px solid #eeeeee;
+}
+/* Removing border from the last food item */
+.food-item:last-of-type {
+    border-bottom: none;
+}
+/* Styling the food article heading */
+.food-heading {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1em;
+    color: #1B3A6B;
+    margin-bottom: 10px;
+}
+/* Styling food images */
+.food-img {
+    width: 100%;
+    max-height: 260px;
+    object-fit: cover;
+    margin-bottom: 12px;
+}
+/* Styling food article paragraphs */
+.food-item p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.9em;
+    color: #555555;
+    line-height: 1.7;
+    margin-bottom: 8px;
+}
+
+/* The why history matter scetion */
+/* Styling the list items with an arrow before each */
+.matters-list {
+    list-style: none;
+    margin: 14px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.matters-list li {
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.92em;
+    color: #555555;
+    line-height: 1.65;
+}
+/* Adding a arrow before each list item */
+.matters-list li::before {
+    content: '→';
+    color: #1B3A6B;
+    font-weight: bold;
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+/* The card for the seasons to allow it toggle */
+/* Using flexbox to place the two season cards side by side */
+.season-row {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    margin-top: 24px;
+    flex-wrap: wrap;
+}
+/* Styling each season card */
+.season-card {
+    flex: 1;
+    min-width: 240px;
+    padding: 24px;
+    border: 1px solid #dddddd;
+}
+/* Dry season card /
+.season-dry {
+    border-left: 4px solid #C9A847;
+    background-color: #FDFBF5;
+}
+/* Rainy season card */
+.season-rainy {
+    border-left: 4px solid #6B8FAF;
+    background-color: #F5F7FA;
+}
+/* Styling the season card heading */
+.season-heading {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 0.98em;
+    color: #1B3A6B;
+    margin-bottom: 6px;
+}
+/* Styling the Recommended / Approach with Caution label */
+.season-label {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.72em;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #C9A847;
+    margin-bottom: 10px;
+}
+/* Styling season card paragraphs */
+.season-card p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.88em;
+    color: #666666;
+    line-height: 1.65;
+}
+
+/* The cards on supporting local */
+/* Using flexbox to display the two support cards side by side */
+.support-row {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    margin-top: 24px;
+    flex-wrap: wrap;
+}
+/* Styling each support card */
+.support-card {
+    flex: 1;
+    min-width: 240px;
+    background-color: #ffffff;
+    border: 1px solid #e0dbd0;
+    padding: 24px;
+    /* Adding the hover lift effect to support cards as well */
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.support-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 18px #00000014;
+}
+/* Styling the support card heading */
+.support-heading {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 0.98em;
+    color: #1B3A6B;
+    margin-bottom: 10px;
+}
+/* Styling support card paragraphs */
+.support-card p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.88em;
+    color: #666666;
+    line-height: 1.65;
+}
+
 /* The footer */
 /* Setting the footer background */
 .site-footer {
@@ -689,6 +1138,7 @@ figcaption {
 .footer-copy strong {
     color: #C9A847;
 }
+/* My Media Quries */
 /* Fixing my media query to allow my site be able to adjust for different screens and be responsive */
 /* For Large screens of 1200px and wider */
 @media (min-width: 1200px) {
@@ -736,6 +1186,32 @@ figcaption {
 
     /* Setting each card to take roughly half the row width on screens of this size */
     .card {
+        flex: 1 1 calc(50% - 10px);
+    }
+    /* Stacking the etiquette sidebar layout on screens of this size */
+    .etiq-layout {
+        flex-direction: column;
+        gap: 24px;
+    }
+ 
+    .etiq-sidebar {
+        flex: 0 0 100%;
+        width: 100%;
+    }
+ 
+    /* Gallery wraps to fewer columns on screens of this size */
+    .gallery-item {
+        flex: 1 1 calc(50% - 8px);
+    }
+ 
+    /* Season and support cards wrap on screens of this size */
+    .season-row,
+    .support-row {
+        flex-wrap: wrap;
+    }
+ 
+    .season-card,
+    .support-card {
         flex: 1 1 calc(50% - 10px);
     }
 }
@@ -816,12 +1292,26 @@ figcaption {
     .section-why,
     .section-split,
     .section-history,
-    .section-purpose {
+    .section-purpose,
+    .section-intro,
+    .section-alt,
+    .section-etiquette,
+    .section-destinations,
+    .section-coastlines,
+    .section-culture-cards,
+    .section-cta {
         padding: 32px 16px;
     }
 
     .section-heading {
         font-size: 1.4em;
+    }
+    .banner-heading {
+        font-size: 1.4em;
+    }
+ 
+    .banner-img {
+        height: 180px;
     }
     /* Stacking cards into one column on mobile */
     .cards-row {
@@ -849,6 +1339,42 @@ figcaption {
         padding: 0 16px;
         gap: 14px;
     }
+    /* Etiquette layout stacks on mobile */
+    .etiq-layout {
+        flex-direction: column;
+        gap: 20px;
+    }
+ 
+    .etiq-sidebar {
+        flex: 0 0 100%;
+    }
+ 
+    /* Gallery goes single column on mobile */
+    .gallery-row {
+        flex-direction: column;
+    }
+ 
+    .gallery-img {
+        height: 220px;
+    }
+ 
+    /* Season and support cards stack on mobile */
+    .season-row,
+    .support-row {
+        flex-direction: column;
+        gap: 14px;
+    }
+ 
+    .season-card,
+    .support-card {
+        flex: 1 1 100%;
+    }
+ 
+    /* Handbook in-page nav reduces padding on mobile */
+    .handbook-nav {
+        padding: 14px 16px;
+    }
+
     /* Reducing footer padding on mobile */
     .site-footer {
         padding: 24px 16px;
@@ -857,4 +1383,15 @@ figcaption {
     .footer-nav {
         gap: 16px;
     }
+}
+/* styling the banner label */
+/* Styling the small category label at the top of the banner */
+.banner-label {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.68em;
+    font-weight: bold;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: #c9a847d9;
+    margin-bottom: 8px;
 }
