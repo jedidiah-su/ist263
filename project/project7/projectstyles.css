@@ -1024,7 +1024,7 @@ figcaption {
     padding: 24px;
     border: 1px solid #dddddd;
 }
-/* Dry season card /
+/* Dry season card */
 .season-dry {
     border-left: 4px solid #C9A847;
     background-color: #FDFBF5;
@@ -1307,7 +1307,29 @@ figcaption {
         width: 220px;
         text-align: center;
     }
-
+    /* The final CTA section used on handbook page */
+    .section-cta {
+        background-color: #1B3A6B;
+        padding: 72px 40px;
+        text-align: center;
+    }
+    /* Centering the eyebrow label inside the CTA section */
+    .section-cta .eyebrow {
+        justify-content: center;
+    }
+    /* Hiding the line before the eyebrow on the centered CTA */
+    .section-cta .eyebrow::before {
+        display: none;
+    }
+    /* Centering the CTA buttons row */
+    .cta-btns {
+        display: flex;
+        flex-direction: row;
+        gap: 14px;
+        justify-content: center;
+        margin-top: 32px;
+        flex-wrap: wrap;
+    }
     /* Sections stack and reduce padding */
     .section-why,
     .section-split,
