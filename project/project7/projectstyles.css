@@ -370,8 +370,10 @@ figcaption {
 .banner-img {
     width: 100%;
     height: auto;
+    max-width: 900px;
     display: block;
     opacity: 0.65;
+    margin: 0 auto;
 }
 
 /* The shared section */
@@ -405,6 +407,29 @@ figcaption {
     line-height: 1.7;
     margin-bottom: 12px;
 }
+/* The final CTA section used on handbook page */
+    .section-cta {
+        background-color: #1B3A6B;
+        padding: 72px 40px;
+        text-align: center;
+    }
+    /* Centering the eyebrow label inside the CTA section */
+    .section-cta .eyebrow {
+        justify-content: center;
+    }
+    /* Hiding the line before the eyebrow on the centered CTA */
+    .section-cta .eyebrow::before {
+        display: none;
+    }
+    /* Centering the CTA buttons row */
+    .cta-btns {
+        display: flex;
+        flex-direction: row;
+        gap: 14px;
+        justify-content: center;
+        margin-top: 32px;
+        flex-wrap: wrap;
+    }
 
 /* Creating my article like cards that show semi brief points with headings */
 
@@ -1307,29 +1332,7 @@ figcaption {
         width: 220px;
         text-align: center;
     }
-    /* The final CTA section used on handbook page */
-    .section-cta {
-        background-color: #1B3A6B;
-        padding: 72px 40px;
-        text-align: center;
-    }
-    /* Centering the eyebrow label inside the CTA section */
-    .section-cta .eyebrow {
-        justify-content: center;
-    }
-    /* Hiding the line before the eyebrow on the centered CTA */
-    .section-cta .eyebrow::before {
-        display: none;
-    }
-    /* Centering the CTA buttons row */
-    .cta-btns {
-        display: flex;
-        flex-direction: row;
-        gap: 14px;
-        justify-content: center;
-        margin-top: 32px;
-        flex-wrap: wrap;
-    }
+    
     /* Sections stack and reduce padding */
     .section-why,
     .section-split,
