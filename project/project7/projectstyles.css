@@ -1613,3 +1613,43 @@ figcaption {
     color: #555555;
     line-height: 1.7;
 }
+
+/* Skip to main content link */
+.skip-link {
+    position: absolute;
+    top: -50px;
+    left: 0;
+    background-color: #1B3A6B;
+    color: #ffffff;
+    padding: 10px 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.9em;
+    font-weight: bold;
+    text-decoration: none;
+    z-index: 999;
+    border-bottom-right-radius: 4px;
+}
+/* Skip link becomes visible when a keyboard user tabs to it */
+.skip-link:focus {
+    top: 0;
+}
+
+/* Back to top link centered above the footer */
+.back-to-top-wrap {
+    text-align: center;
+    padding: 20px 0 10px 0;
+    background-color: #F7F4EE;
+    border-top: 1px solid #e0dbd0;
+}
+.back-to-top {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.82em;
+    color: #1B3A6B;
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+.back-to-top:hover {
+    color: #C9A847;
+    text-decoration: none;
+}
