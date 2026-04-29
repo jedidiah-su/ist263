@@ -343,6 +343,10 @@ figcaption {
     margin-bottom: 12px;
     max-width: 760px;
 }
+/* Fixing the styling for the section lead that comes on the dark background as it contrasts with the white background one */
+.section-lead.section-lead-light {
+    color: #DEDEDE;
+}
 
 /* The page banner for the culture and handbook page */
 /* Setting up the banner as a relative container so the heading can sit over the image */
