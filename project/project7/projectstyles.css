@@ -38,6 +38,14 @@ figcaption {
     margin-top: 6px;
     font-family: Arial, Helvetica, sans-serif;
 }
+/* Styling the figcaption that is on the dark background so that it passes the contrast */
+    .hero figcaption {
+        color: #C8D8F0;
+    }
+    .page-banner figcaption {
+        color: #C8D8F0;
+    }
+
 /* Nav stylings */
 /* Setting the header background color and making it stick to the top as the user scrolls */
 .site-header {
@@ -315,7 +323,7 @@ figcaption {
 
 /* Light version of the section lead used on dark backgrounds */
 .section-lead-light {
-    color: #ffffffbf;
+    color: #ffffffde;
 }
 /* Styling smaller sub-headings used within sections */
 .sub-heading {
@@ -515,7 +523,7 @@ figcaption {
 .card-text-light {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 0.85em;
-    color: #ffffffa6;
+    color: #ffffffde;
     line-height: 1.65;
 }
 
@@ -706,7 +714,7 @@ figcaption {
 .bridge-text span {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 0.82em;
-    color: #888888;
+    color: #484040;
 }
 
 /* The culture card section */
@@ -883,7 +891,7 @@ figcaption {
 /* Styling the table caption */
 .data-table caption {
     font-size: 0.78em;
-    color: #888888;
+    color: #474141;
     font-style: italic;
     margin-bottom: 8px;
     text-align: left;
@@ -950,7 +958,7 @@ figcaption {
     font-weight: bold;
     letter-spacing: 3px;
     text-transform: uppercase;
-    color: #aaaaaa;
+    color: #474343;
     margin-bottom: 10px;
 }
 /* Using flexbox to display all jump links in a row that wraps */
@@ -1158,7 +1166,7 @@ figcaption {
 .footer-copy {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 0.8em;
-    color: rgba(255, 255, 255, 0.5);
+    color: rgba(255, 255, 255, 0.78);
 }
  
 /* Making the site name inside the copyright line have color */
