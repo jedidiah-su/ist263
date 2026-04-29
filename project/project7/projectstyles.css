@@ -338,7 +338,7 @@ figcaption {
 .section-lead {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 0.95em;
-    color: #ebe5e5;
+    color: #3d3a3a;
     line-height: 1.7;
     margin-bottom: 12px;
     max-width: 760px;
@@ -523,7 +523,7 @@ figcaption {
 .card-text-light {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 0.85em;
-    color: #ffffffde;
+    color: #ffffff;
     line-height: 1.65;
 }
 
