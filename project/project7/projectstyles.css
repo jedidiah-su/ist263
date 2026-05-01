@@ -571,9 +571,6 @@ figcaption {
 .split-img {
     width: 100%;
     height: auto;
-    max-width: 700px;
-    max-height: 500px;
-    object-fit: cover;
     display: block;
 }
  
@@ -823,9 +820,7 @@ figcaption {
 /* Styling destination images */
 .destination-img {
     width: 100%;
-    max-width: 700px;
-    max-height: 280px;
-    object-fit: cover;
+    height:auto;
     margin-bottom: 14px;
 }
 /* Styling destination paragraphs */
