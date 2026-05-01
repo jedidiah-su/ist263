@@ -569,7 +569,8 @@ figcaption {
 /* Making the image fill the full width of its column */
 .split-img {
     width: 100%;
-    height: auto;
+    height: 450px;
+    object-fit: fill;
     display: block;
 }
  
@@ -758,7 +759,7 @@ figcaption {
 }
 .etiq-img {
     width: 100%;
-    height: auto;
+    height: 250px;object-fit: fill;
     display: block;
 }
 /* Right column takes the remaining space */
@@ -819,8 +820,8 @@ figcaption {
 /* Styling destination images */
 .destination-img {
     width: 100%;
-    height:auto;
-    max-height:400;
+    height:280px;
+    object-fit: cover;
     margin-bottom: 14px;
 }
 /* Styling destination paragraphs */
@@ -1177,101 +1178,7 @@ figcaption {
 }
 /* My Media Quries */
 /* Fixing my media query to allow my site be able to adjust for different screens and be responsive */
-/* For Large screens of 1200px and wider */
-@media (min-width: 1200px) {
 
-    /* Giving the hero more breathing room on large screens */
-    .hero {
-        padding: 80px 40px;
-    }
-
-    /* Making the hero heading larger on big screens */
-    .hero-heading {
-        font-size: 3em;
-    }
-
-    /* Giving section headings more presence on large screens */
-    .section-heading {
-        font-size: 2.1em;
-    }
-}
-/* For screens of 900px wide and smaller */
-@media (max-width: 900px) {
-
-    /* Making the hero heading smaller on screens of this size */
-    .hero-heading {
-        font-size: 2em;
-    }
-
-    /* Stacking the two-column image and text sections into one column */
-    .split-layout {
-        flex-direction: column;
-        gap: 32px;
-    }
-
-    /* Making image columns go full width when stacked */
-    .split-img-col,
-    .split-img-tall {
-        flex: 0 0 100%;
-        width: 100%;
-    }
-
-    /* Allowing cards to wrap so two appear per row on screens of this size */
-    .cards-row {
-        flex-wrap: wrap;
-    }
-
-    /* Setting each card to take roughly half the row width on screens of this size */
-    .card {
-        flex: 1 1 calc(50% - 10px);
-    }
-    /* Stacking the etiquette sidebar layout on screens of this size */
-    .etiq-layout {
-        flex-direction: column;
-        gap: 24px;
-    }
- 
-    .etiq-sidebar {
-        flex: 0 0 100%;
-        width: 100%;
-    }
- 
-    /* Gallery wraps to fewer columns on screens of this size */
-    .gallery-item {
-        flex: 1 1 calc(50% - 8px);
-    }
- 
-    /* Season and support cards wrap on screens of this size */
-    .season-row,
-    .support-row {
-        flex-wrap: wrap;
-    }
- 
-    .season-card,
-    .support-card {
-        flex: 1 1 calc(50% - 10px);
-    }
-    .food-mosaic {
-        flex-direction: column;
-    }
-    .food-mosaic-main {
-        flex: 0 0 auto;
-    }
-    .food-mosaic-img-main {
-        height: 260px;
-    }
-    .practical-layout {
-        flex-direction: column;
-    }
-    .practical-img-stack {
-        flex: 0 0 auto;
-        flex-direction: row;
-    }
-    .practical-img {
-        height: 120px;
-    }
-
-}
 /* For mobile screens*/
 @media (max-width: 768px) {
 
