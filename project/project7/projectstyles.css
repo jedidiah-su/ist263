@@ -376,14 +376,14 @@ figcaption {
 /* Containing the banner image below the heading */
 .banner-figure {
     width: 100%;
-    max-width: 900px;
     margin: 0;
 }
 /* Making the banner image full width */
 .banner-img {
     width: 100%;
-    height: 400px;
+    height: 350px;
     object-fit: cover;
+    object-position: center;
     display: block;
     opacity: 0.65;
 }
