@@ -570,7 +570,7 @@ figcaption {
 .split-img {
     width: 100%;
     height: 450px;
-    object-fit: fill;
+    object-fit: cover;
     display: block;
 }
  
@@ -759,7 +759,7 @@ figcaption {
 }
 .etiq-img {
     width: 100%;
-    height: 250px;object-fit: fill;
+    height: 250px;object-fit: cover;
     display: block;
 }
 /* Right column takes the remaining space */
@@ -1178,6 +1178,67 @@ figcaption {
 }
 /* My Media Quries */
 /* Fixing my media query to allow my site be able to adjust for different screens and be responsive */
+
+/* For screens of 900px wide and smaller */
+@media (max-width: 900px) {
+
+    .hero-heading {
+        font-size: 2em;
+    }
+    .split-layout {
+        flex-direction: column;
+        gap: 32px;
+    }
+    .split-img-col,
+    .split-img-tall {
+        flex: 0 0 100%;
+        width: 100%;
+    }
+    .cards-row {
+        flex-wrap: wrap;
+    }
+    .card {
+        flex: 1 1 calc(50% - 10px);
+    }
+    .etiq-layout {
+        flex-direction: column;
+        gap: 24px;
+    }
+    .etiq-sidebar {
+        flex: 0 0 100%;
+        width: 100%;
+    }
+    .gallery-item {
+        flex: 1 1 calc(50% - 8px);
+    }
+    .season-row,
+    .support-row {
+        flex-wrap: wrap;
+    }
+    .season-card,
+    .support-card {
+        flex: 1 1 calc(50% - 10px);
+    }
+    .food-mosaic {
+        flex-direction: column;
+    }
+    .food-mosaic-main {
+        flex: 0 0 auto;
+    }
+    .food-mosaic-img-main {
+        height: 260px;
+    }
+    .practical-layout {
+        flex-direction: column;
+    }
+    .practical-img-stack {
+        flex: 0 0 auto;
+        flex-direction: row;
+    }
+    .practical-img {
+        height: 200px;
+    }
+}
 
 /* For mobile screens*/
 @media (max-width: 768px) {
