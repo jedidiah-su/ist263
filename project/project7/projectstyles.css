@@ -376,6 +376,7 @@ figcaption {
 /* Containing the banner image below the heading */
 .banner-figure {
     width: 100%;
+    max-width: 900px;
     margin: 0;
 }
 /* Making the banner image full width */
@@ -570,6 +571,7 @@ figcaption {
 .split-img {
     width: 100%;
     height: auto;
+    max-width: 700px;
     max-height: 500px;
     object-fit: cover;
     display: block;
@@ -821,6 +823,7 @@ figcaption {
 /* Styling destination images */
 .destination-img {
     width: 100%;
+    max-width: 700px;
     max-height: 280px;
     object-fit: cover;
     margin-bottom: 14px;
