@@ -524,7 +524,7 @@ figcaption {
 }
 
 /* Light version of card body text for dark background sections */
-.card-text-light {
+.card-body .card-text-light {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 0.85em;
     color: #ffffff;
